@@ -5,7 +5,8 @@
   <title>Python Catania 🐘</title>
   <meta charset="utf-8" />
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' data:; child-src 'none'; style-src 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline';" />
+    content="default-src 'self'; img-src 'self' data:; child-src 'none'; style-src 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline' https://*.umami.is; connect-src 'self' https://*.umami.is https://*.umami.dev;" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a4af97bd-75a4-417b-a0bf-4829b6fb927c"></script>
   <link rel="stylesheet"
     integrity="sha512-5p/F4xMhdhwRdZfqEIx/sLK2yRCrc6LQJW3DP2zqt0rLeDohLL6bKglBBJvRKiOwDVqcyjlglNbSng1TrSSBhg=="
     href="css/pico.min.2.0.6.1.css" />
@@ -67,16 +68,17 @@
     :root:not([data-theme=dark]) {
       --pico-text-selection-color: rgba(244, 93, 44, 0.25);
       --pico-primary: #f50000;
-      --pico-primary-background:#e50000;
+      --pico-primary-background: #e50000;
       --pico-primary-underline: rgba(189, 60, 19, 0.5);
       --pico-primary-hover: #942d0d;
       --pico-primary-hover-background: #bd3c13;
       --pico-primary-focus: rgba(244, 93, 44, 0.5);
       --pico-primary-inverse: #fff;
       --pico-secondary: #0070bc;
-      --pico-secondary-background:#0070bc;
+      --pico-secondary-background: #0070bc;
     }
   </style>
+
 </head>
 
 <body>
@@ -180,6 +182,17 @@
                 d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
             </svg>&nbsp;YouTube</a>
         </p>
+        <p>
+          <a id="instagram" rel="me noopener" target="_blank" href="https://www.instagram.com/pythoncatania/"
+            role="button" class="secondary" aria-label="Instagram">
+            <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              height="1.33em">
+              <title>Instagram</title>
+              <path
+                d="M12 2.163c3.206 0 3.58.012 4.844.07 1.2.058 2.04.25 2.5.42.6.24 1.04.54 1.5 1.04.46.46.76.9 1.04 1.5.17.46.36 1.3.42 2.5.058 1.264.07 1.638.07 4.844s-.012 3.58-.07 4.844c-.058 1.2-.25 2.04-.42 2.5-.24.6-.54 1.04-1.04 1.5-.46.46-.9.76-1.5 1.04-.46.17-1.3.36-2.5.42-1.264.058-1.638.07-4.844.07s-3.58-.012-4.844-.07c-1.2-.058-2.04-.25-2.5-.42-.6-.24-1.04-.54-1.5-1.04-.46-.46-.76-.9-1.04-1.5-.17-.46-.36-1.3-.42-2.5C2.175 12.743 2.163 12.368 2.163 9.163S2.175 5.58 2.233 4.316c.058-1.2.25-2.04.42-2.5.24-.6.54-1.04 1.04-1.5.46-.46.9-.76 1.5-1.04.46-.17 1.3-.36 2.5-.42C8.418 2.175 8.793 2.163 12 2.163zm0 5.837a6.163 6.163 0 1 0 0 12.326 6.163 6.163 0 0 0 0-12.326zm0 10.326a4.163 4.163 0 1 1 0-8.326 4.163 4.163 0 0 1 0 8.326zm6.5-10.326a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
+            </svg>&nbsp;Instagram
+          </a>
+        </p>
         <h2 id="media-partners">Media Partners</h2>
         <p>
           <a id="pycon-italia" rel="noopener" target="_blank" href="https://www.pycon.it/" role="button"
@@ -215,6 +228,19 @@
   <footer>
     <abbr title="Copyright">&copy;</abbr> 2025 Python&nbsp;Catania
   </footer>
+  <script type="text/javascript">
+    (() => {
+      document.querySelectorAll('a').forEach(a => {
+        if (a.host !== window.location.host && !a.getAttribute('data-umami-event')) {
+          a.setAttribute('data-umami-event', "Click " + a.ariaLabel);
+          a.setAttribute('data-umami-event-element', "anchor");
+          a.setAttribute('data-umami-event-event', "onclick");
+          a.setAttribute('data-umami-event-id', a.id);
+          a.setAttribute('data-umami-event-url', a.href);
+        }
+      });
+    })();
+  </script>
 </body>
 
 </html>
