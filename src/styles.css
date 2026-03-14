@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import './pico.min.2.0.6.1.css';
+
+footer,
+header,
+main {
+  text-align: center;
+}
+
+[role="button"] {
+  width: 10.5rem;
+}
+
+/* Orange color for light color scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --pico-text-selection-color: rgba(244, 93, 44, 0.25);
+  --pico-primary: #f50000;
+  --pico-primary-background: #e50000;
+  --pico-primary-underline: rgba(189, 60, 19, 0.5);
+  --pico-primary-hover: #942d0d;
+  --pico-primary-hover-background: #bd3c13;
+  --pico-primary-focus: rgba(244, 93, 44, 0.5);
+  --pico-primary-inverse: #fff;
+  --pico-secondary: #0070bc;
+  --pico-secondary-background: #0070bc;
+}
