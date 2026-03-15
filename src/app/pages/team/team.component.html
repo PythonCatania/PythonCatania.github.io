@@ -2,26 +2,43 @@
   <div class="mx-auto max-w-4xl">
     <h1 class="mb-4 text-center text-3xl font-bold">{{ 'about.title' | transloco }}</h1>
     <p class="mb-10 text-center text-(--color-muted)">{{ 'about.description' | transloco }}</p>
-    <ul class="flex list-none flex-wrap justify-center gap-6 p-0">
+    <ul class="grid list-none grid-cols-2 gap-8 p-0">
       @for (member of members; track member.name) {
-        <li class="flex w-44 flex-col items-center gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-6 text-center">
-          <div
-            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-(--color-primary) text-xl font-bold text-white"
-          >
-            {{ member.name[0] }}
-          </div>
+        <li class="flex flex-col items-center gap-4 rounded-(--radius) border border-(--border) bg-(--surface) p-8 text-center">
+          <img
+            [ngSrc]="member.image"
+            width="160"
+            height="160"
+            [alt]="member.name"
+            class="h-40 w-40 rounded-full object-cover"
+          />
           <div>
-            <p class="font-semibold">{{ member.name }}</p>
-            <p class="mt-1 text-sm text-(--color-muted)">{{ 'about.role' | transloco }}</p>
-            @if (member.github) {
-              <a
-                [href]="member.github"
-                target="_blank"
-                rel="noopener"
-                class="mt-1 block text-sm text-(--color-primary) no-underline hover:underline"
-                >GitHub</a
-              >
-            }
+            <p class="text-lg font-semibold">{{ member.name }}</p>
+            <p class="mt-1 text-(--color-muted)">{{ 'about.role' | transloco }}</p>
+            <div class="mt-3 flex justify-center gap-3">
+              @if (member.github) {
+                <a
+                  [href]="member.github"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  class="flex items-center gap-2 text-base font-medium text-(--color-primary) no-underline hover:underline"
+                >
+                  <app-icon-github />GitHub
+                </a>
+              }
+              @if (member.linkedin) {
+                <a
+                  [href]="member.linkedin"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  class="flex items-center gap-2 text-base font-medium text-(--color-secondary) no-underline hover:underline"
+                >
+                  <app-icon-linkedin />LinkedIn
+                </a>
+              }
+            </div>
           </div>
         </li>
       }
