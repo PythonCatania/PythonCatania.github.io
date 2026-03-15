@@ -1,0 +1,239 @@
+<header
+  class="sticky top-0 z-100 border-b border-(--border) bg-[color-mix(in_srgb,var(--bg)_85%,transparent)] backdrop-blur-md"
+>
+  <nav class="flex min-h-(--nav-height) items-center justify-between px-4">
+    <!-- Desktop nav -->
+    <ul class="hidden list-none items-center gap-1 p-0 sm:flex">
+      <!-- Logo + PyCatania (same anchor) -->
+      <li class="flex list-none items-center">
+        <a
+          href="#pycatania"
+          (click)="scrollTo($event, 'pycatania')"
+          class="flex items-center px-3 py-[0.4rem] text-inherit no-underline"
+          aria-label="Python Catania home"
+        >
+          <img ngSrc="/images/pythoncatania.svg" alt="Python Catania" height="36" width="36" priority class="block" />
+        </a>
+      </li>
+      <li class="flex list-none items-center">
+        <a
+          href="#pycatania"
+          (click)="scrollTo($event, 'pycatania')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.home' | transloco }}</a
+        >
+      </li>
+
+      <!-- Next Meetup -->
+      <li class="flex list-none items-center">
+        <a
+          href="#next-meetup"
+          (click)="scrollTo($event, 'next-meetup')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.nextMeetup' | transloco }}</a
+        >
+      </li>
+
+      <!-- Call for Speakers -->
+      <li class="flex list-none items-center">
+        <a
+          href="#call-for-speakers"
+          (click)="scrollTo($event, 'call-for-speakers')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.callForSpeakers' | transloco }}</a
+        >
+      </li>
+
+      <!-- Contacts -->
+      <li class="flex list-none items-center">
+        <a
+          href="#contact"
+          (click)="scrollTo($event, 'contact')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.contacts' | transloco }}</a
+        >
+      </li>
+
+      <!-- Supporters -->
+      <li class="flex list-none items-center">
+        <a
+          href="#supporters"
+          (click)="scrollTo($event, 'supporters')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.supporters' | transloco }}</a
+        >
+      </li>
+
+      <!-- Community dropdown -->
+      <li class="relative flex list-none items-center">
+        <details class="group">
+          <summary
+            class="flex cursor-pointer list-none items-center gap-1 rounded-(--radius) px-3 py-[0.4rem] text-inherit transition-colors duration-150 hover:bg-(--surface) [&::-webkit-details-marker]:hidden"
+          >
+            {{ 'nav.community' | transloco }}
+            <svg
+              class="h-3 w-3 transition-transform group-open:rotate-180"
+              viewBox="0 0 10 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <path d="M1 1l4 4 4-4" />
+            </svg>
+          </summary>
+          <ul
+            class="absolute top-[calc(100%+0.25rem)] left-0 z-10 m-0 min-w-40 list-none rounded-(--radius) border border-(--border) bg-(--bg) p-1 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
+          >
+            <li class="block">
+              <a
+                routerLink="/chi-siamo"
+                routerLinkActive="text-(--color-primary)"
+                (click)="closeDropdown($event)"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.about' | transloco }}</a
+              >
+            </li>
+            @if (debugService.isEnabled) {
+              <li class="block">
+                <a
+                  routerLink="/blog"
+                  routerLinkActive="text-(--color-primary)"
+                  (click)="closeDropdown($event)"
+                  class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                  >{{ 'nav.blog' | transloco }}</a
+                >
+              </li>
+            }
+            <li class="block">
+              <a
+                routerLink="/events"
+                routerLinkActive="text-(--color-primary)"
+                (click)="closeDropdown($event)"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.events' | transloco }}</a
+              >
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+
+    <!-- Language toggle (desktop) -->
+    <div class="hidden items-center sm:flex">
+      <button
+        (click)="toggleLanguage()"
+        class="cursor-pointer rounded-(--radius) border border-(--border) bg-transparent px-3 py-[0.4rem] text-inherit transition-colors hover:bg-(--surface)"
+        [attr.aria-label]="activeLang() === 'it' ? 'Switch to English' : 'Passa all\'italiano'"
+      >
+        {{ activeLang() === 'it' ? '🇬🇧' : '🇮🇹' }}
+      </button>
+    </div>
+
+    <!-- Mobile: logo + hamburger -->
+    <ul class="flex w-full list-none items-center justify-between p-0 sm:hidden">
+      <li class="flex list-none items-center">
+        <a
+          href="#pycatania"
+          (click)="scrollTo($event, 'pycatania')"
+          class="flex items-center px-3 py-[0.4rem] text-inherit no-underline"
+          aria-label="Python Catania home"
+        >
+          <img ngSrc="/images/pythoncatania.svg" alt="Python Catania" height="36" width="36" priority class="block" />
+        </a>
+      </li>
+      <li class="flex list-none items-center gap-2">
+        <button
+          (click)="toggleLanguage()"
+          class="cursor-pointer rounded-(--radius) border border-(--border) bg-transparent px-2 py-1 text-inherit transition-colors hover:bg-(--surface)"
+          [attr.aria-label]="activeLang() === 'it' ? 'Switch to English' : 'Passa all\'italiano'"
+        >
+          {{ activeLang() === 'it' ? '🇬🇧' : '🇮🇹' }}
+        </button>
+        <details class="relative">
+          <summary
+            class="cursor-pointer list-none px-2 py-1 text-[1.4rem] [&::-webkit-details-marker]:hidden"
+            aria-label="Menu"
+          >
+            &#9776;
+          </summary>
+          <ul
+            class="absolute top-[calc(100%+0.25rem)] right-0 z-10 m-0 min-w-44 list-none rounded-(--radius) border border-(--border) bg-(--bg) p-1 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
+          >
+            <li class="block">
+              <a
+                href="#pycatania"
+                (click)="scrollTo($event, 'pycatania')"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.home' | transloco }}</a
+              >
+            </li>
+            <li class="block">
+              <a
+                href="#next-meetup"
+                (click)="scrollTo($event, 'next-meetup')"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.nextMeetup' | transloco }}</a
+              >
+            </li>
+            <li class="block">
+              <a
+                href="#call-for-speakers"
+                (click)="scrollTo($event, 'call-for-speakers')"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.callForSpeakers' | transloco }}</a
+              >
+            </li>
+            <li class="block">
+              <a
+                href="#contact"
+                (click)="scrollTo($event, 'contact')"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.contacts' | transloco }}</a
+              >
+            </li>
+            <li class="block">
+              <a
+                href="#supporters"
+                (click)="scrollTo($event, 'supporters')"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.supporters' | transloco }}</a
+              >
+            </li>
+            <li class="mt-1 block border-t border-(--border) pt-1">
+              <p class="px-3 py-1 text-xs tracking-wide text-(--color-muted) uppercase">
+                {{ 'nav.community' | transloco }}
+              </p>
+            </li>
+            <li class="block">
+              <a
+                routerLink="/chi-siamo"
+                (click)="closeDropdown($event)"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.about' | transloco }}</a
+              >
+            </li>
+            @if (debugService.isEnabled) {
+              <li class="block">
+                <a
+                  routerLink="/blog"
+                  (click)="closeDropdown($event)"
+                  class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                  >{{ 'nav.blog' | transloco }}</a
+                >
+              </li>
+            }
+            <li class="block">
+              <a
+                routerLink="/events"
+                (click)="closeDropdown($event)"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.events' | transloco }}</a
+              >
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header>

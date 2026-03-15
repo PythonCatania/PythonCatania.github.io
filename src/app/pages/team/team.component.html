@@ -1,0 +1,30 @@
+<section class="px-4 py-16">
+  <div class="mx-auto max-w-4xl">
+    <h1 class="mb-4 text-center text-3xl font-bold">{{ 'about.title' | transloco }}</h1>
+    <p class="mb-10 text-center text-(--color-muted)">{{ 'about.description' | transloco }}</p>
+    <ul class="flex list-none flex-wrap justify-center gap-6 p-0">
+      @for (member of members; track member.name) {
+        <li class="flex w-44 flex-col items-center gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-6 text-center">
+          <div
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-(--color-primary) text-xl font-bold text-white"
+          >
+            {{ member.name[0] }}
+          </div>
+          <div>
+            <p class="font-semibold">{{ member.name }}</p>
+            <p class="mt-1 text-sm text-(--color-muted)">{{ 'about.role' | transloco }}</p>
+            @if (member.github) {
+              <a
+                [href]="member.github"
+                target="_blank"
+                rel="noopener"
+                class="mt-1 block text-sm text-(--color-primary) no-underline hover:underline"
+                >GitHub</a
+              >
+            }
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

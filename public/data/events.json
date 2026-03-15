@@ -1,0 +1,188 @@
+[
+  {
+    "id": 313050179,
+    "title": "Meetup Python Catania - Python Coding Festival 🎶",
+    "date": "2026-02-27",
+    "image": "/images/events/event-313050179.jpg",
+    "description": "La community di Python Catania si incontra per stare insieme e condividere del buon codice sorgente. Che tu sia uno sviluppatore principiante o esperto di Python, questo evento fa per te!",
+    "descriptionEn": "The Python Catania community meets to spend time together and share great source code. Whether you are a beginner or an expert Python developer, this event is for you!",
+    "fullDescription": "Una serata dedicata alla musica del codice: la community di Python Catania si ritrova per condividere progetti, talk lampo e idee. L'evento è aperto a tutti, indipendentemente dal livello di esperienza. Portiamo gli strumenti del mestiere, un po' di curiosità e molta voglia di imparare insieme. Come di consueto, ci sarà spazio per networking, domande e confronto libero al termine dei talk.",
+    "fullDescriptionEn": "An evening dedicated to the music of code: the Python Catania community gathers to share projects, lightning talks and ideas. The event is open to everyone regardless of experience level. We bring the tools of the trade, a bit of curiosity and plenty of desire to learn together. As usual, there will be time for networking, questions and open discussion after the talks.",
+    "attendees": 45,
+    "url": "https://www.meetup.com/python-catania/events/313050179/",
+    "gallery": [
+      "/images/events/event-313050179.jpg"
+    ],
+    "speakers": [
+      { "name": "TBA", "topic": "Talk in arrivo", "topicEn": "Talk coming soon" }
+    ]
+  },
+  {
+    "id": 312066711,
+    "title": "Meetup Python Catania - Ho! Ho! Python Code! 🎅🎄",
+    "date": "2025-12-09",
+    "image": "/images/events/event-312066711.jpg",
+    "description": "Edizione speciale natalizia della community Python Catania, dove condividere nuove tecnologie, buon codice sorgente e sempre nuove iniziative.",
+    "descriptionEn": "A special Christmas edition of the Python Catania community, sharing new technologies, great source code and exciting new initiatives.",
+    "fullDescription": "L'edizione natalizia del meetup Python Catania è sempre un momento speciale: l'anno sta per finire, è tempo di bilanci e di guardare avanti. Ci ritroviamo per raccontare cosa abbiamo imparato durante l'anno, scoprire nuovi strumenti e tecnologie Python, e festeggiare insieme lo spirito della community. Dolci natalizi e buon umore garantiti.",
+    "fullDescriptionEn": "The Christmas edition of the Python Catania meetup is always a special moment: the year is coming to an end, it is time to take stock and look ahead. We gather to talk about what we have learned during the year, discover new Python tools and technologies, and celebrate the community spirit together. Christmas sweets and good cheer guaranteed.",
+    "attendees": 38,
+    "url": "https://www.meetup.com/python-catania/events/312066711/",
+    "gallery": [
+      "/images/events/event-312066711.jpg"
+    ],
+    "speakers": [
+      { "name": "Salvatore Rapisarda", "topic": "Recap 2025: un anno di Python Catania", "topicEn": "Recap 2025: a year of Python Catania" },
+      { "name": "Matteo Jacopo Schembri", "topic": "Le novità di Python 3.14", "topicEn": "What's new in Python 3.14" }
+    ]
+  },
+  {
+    "id": 311306942,
+    "title": "Meetup Python Catania - PythObrata 2025 🌰🍷",
+    "date": "2025-10-30",
+    "image": "/images/events/event-311306942.jpg",
+    "description": "Il mese di Ottobre è l'ideale per festeggiare l'arrivo dell'autunno e organizzare un nuovo meetup della community Python Catania, dove condividere nuove tecnologie, buon codice sorgente e sempre nuove iniziative.",
+    "descriptionEn": "October is the perfect time to celebrate the arrival of autumn with a new Python Catania community meetup, sharing new technologies, great source code and exciting new initiatives.",
+    "fullDescription": "PythObrata è il nostro appuntamento autunnale per eccellenza: caldarroste, vino novello e tanto Python. Quest'anno abbiamo esplorato temi come la type safety in Python, l'uso di strumenti di analisi statica e qualche anteprima delle novità in arrivo nell'ecosistema. Come sempre, l'atmosfera è rilassata e inclusiva, perfetta per chi si avvicina per la prima volta alla community.",
+    "fullDescriptionEn": "PythObrata is our autumn meetup par excellence: roasted chestnuts, new wine and lots of Python. This year we explored topics such as type safety in Python, the use of static analysis tools and some previews of upcoming news in the ecosystem. As always, the atmosphere is relaxed and inclusive, perfect for those approaching the community for the first time.",
+    "attendees": 42,
+    "url": "https://www.meetup.com/python-catania/events/311306942/",
+    "gallery": [
+      "/images/events/event-311306942.jpg"
+    ],
+    "speakers": [
+      { "name": "Claudio Faro", "topic": "Type safety in Python: mypy e pyright a confronto", "topicEn": "Type safety in Python: mypy vs pyright" },
+      { "name": "Stefano Borzi", "topic": "Introduzione a Ruff: linting e formatting ultra-veloce", "topicEn": "Introduction to Ruff: ultra-fast linting and formatting" }
+    ]
+  },
+  {
+    "id": 308969846,
+    "title": "Meetup Python Catania - Con la calata del fresco",
+    "date": "2025-07-17",
+    "image": "/images/events/event-308969846.jpg",
+    "description": "In una calda serata d'estate la community Python Catania si incontra alla ricerca di un poco di frescura e per condividere nuove tecnologie, buon codice sorgente e nuove iniziative.",
+    "descriptionEn": "On a warm summer evening the Python Catania community meets in search of a little freshness, sharing new technologies, great source code and new initiatives.",
+    "fullDescription": "In estate a Catania il calore è protagonista indiscusso, ma la voglia di fare coding non si ferma mai. Abbiamo approfittato del fresco serale per ritrovarci, portare qualche progetto estivo e condividere idee nate sotto il sole. La serata ha incluso talk, demo live e un ampio spazio per il networking all'aperto.",
+    "fullDescriptionEn": "In summer in Catania the heat is the undisputed protagonist, but the desire to code never stops. We took advantage of the evening coolness to meet, bring some summer projects and share ideas born in the sun. The evening included talks, live demos and ample space for outdoor networking.",
+    "attendees": 35,
+    "url": "https://www.meetup.com/python-catania/events/308969846/",
+    "gallery": [
+      "/images/events/event-308969846.jpg"
+    ],
+    "speakers": [
+      { "name": "Matteo Jacopo Schembri", "topic": "FastAPI + async: pattern avanzati", "topicEn": "FastAPI + async: advanced patterns" }
+    ]
+  },
+  {
+    "id": 307712208,
+    "title": "Meetup Python Catania - Get ready for PyCon Italia 2025!",
+    "date": "2025-05-16",
+    "image": "/images/events/event-307712208.jpg",
+    "description": "Il PyCon Italia 2025 è vicinissimo ed è il momento giusto per incontrare la community di Python Catania e condividere del buon codice sorgente.",
+    "descriptionEn": "PyCon Italia 2025 is just around the corner — the perfect moment to meet the Python Catania community and share great source code.",
+    "fullDescription": "Manca poco al PyCon Italia 2025 e questo meetup è stato dedicato alla preparazione: chi andrà, quali talk non perdere, come orientarsi tra i track e le attività. Abbiamo anche ascoltato i talk di due nostri membri che presenteranno al PyCon, una bella anteprima per tutta la community.",
+    "fullDescriptionEn": "PyCon Italia 2025 is just around the corner and this meetup was dedicated to preparation: who is going, which talks not to miss, how to navigate the tracks and activities. We also heard preview talks from two of our members who will present at PyCon — a great preview for the whole community.",
+    "attendees": 40,
+    "url": "https://www.meetup.com/python-catania/events/307712208/",
+    "gallery": [
+      "/images/events/event-307712208.jpg"
+    ],
+    "speakers": [
+      { "name": "Salvatore Rapisarda", "topic": "Preview: il mio talk al PyCon Italia 2025", "topicEn": "Preview: my talk at PyCon Italia 2025" },
+      { "name": "Claudio Faro", "topic": "Guida al PyCon: come sopravvivere alla conferenza", "topicEn": "PyCon guide: how to survive the conference" }
+    ]
+  },
+  {
+    "id": 306025381,
+    "title": "Meetup Python Catania - Carnival Party Time",
+    "date": "2025-02-22",
+    "image": "/images/events/event-306025381.jpg",
+    "description": "La community di Python Catania si incontra nel primo meetup del 2025 per stare insieme e condividere del buon codice sorgente.",
+    "descriptionEn": "The Python Catania community meets for the first meetup of 2025 to spend time together and share great source code.",
+    "fullDescription": "Il primo meetup del 2025 si è tenuto in periodo di Carnevale: un'occasione per iniziare l'anno con il piede giusto, presentare nuovi progetti e accogliere nuovi membri nella community. Tra i temi discussi: le tendenze Python per il 2025, novità nell'ecosistema web e un talk sulla gestione dei package con uv.",
+    "fullDescriptionEn": "The first meetup of 2025 was held during Carnival: an opportunity to start the year on the right foot, present new projects and welcome new members to the community. Among the topics discussed: Python trends for 2025, news in the web ecosystem and a talk on package management with uv.",
+    "attendees": 36,
+    "url": "https://www.meetup.com/python-catania/events/306025381/",
+    "gallery": [
+      "/images/events/event-306025381.jpg"
+    ],
+    "speakers": [
+      { "name": "Stefano Borzi", "topic": "uv: il nuovo package manager Python", "topicEn": "uv: the new Python package manager" }
+    ]
+  },
+  {
+    "id": 304691223,
+    "title": "Meetup Python Catania - All I Want For Christmas is Python! 🎅",
+    "date": "2024-12-06",
+    "image": "/images/events/event-304691223.jpg",
+    "description": "Natale si avvicina ed è arrivato il momento di incontrare la community di Python Catania per stare insieme e condividere del buon codice sorgente.",
+    "descriptionEn": "Christmas is approaching and it is time to meet the Python Catania community to spend time together and share great source code.",
+    "fullDescription": "L'ultimo meetup del 2024 ha riunito la community per festeggiare insieme un altro anno di crescita e apprendimento. Abbiamo ripercorso i momenti salienti dell'anno, dal PyCon Italia ai progetti nati in community, e ci siamo dati appuntamento per il 2025 con tanta voglia di fare.",
+    "fullDescriptionEn": "The last meetup of 2024 brought the community together to celebrate another year of growth and learning. We looked back at the highlights of the year, from PyCon Italia to community-born projects, and made plans for 2025 with plenty of enthusiasm.",
+    "attendees": 44,
+    "url": "https://www.meetup.com/python-catania/events/304691223/",
+    "gallery": [
+      "/images/events/event-304691223.jpg"
+    ],
+    "speakers": [
+      { "name": "Salvatore Rapisarda", "topic": "Best of 2024: i talk più belli dell'anno", "topicEn": "Best of 2024: the year's best talks" },
+      { "name": "Matteo Jacopo Schembri", "topic": "Progetti community: cosa abbiamo costruito insieme", "topicEn": "Community projects: what we built together" }
+    ]
+  },
+  {
+    "id": 302671524,
+    "title": "Meetup Python Catania - Summer Edition 2024",
+    "date": "2024-08-30",
+    "image": "/images/events/event-302671524.jpg",
+    "description": "In una calda serata d'estate catanese la community Python Catania si incontra per condividere novità, idee e curiosità sul nostro amato linguaggio Python.",
+    "descriptionEn": "On a warm Catanian summer evening the Python Catania community meets to share news, ideas and curiosities about our beloved Python language.",
+    "fullDescription": "La Summer Edition 2024 è stata una delle serate più partecipate dell'anno. Nonostante il caldo, la voglia di Python ha vinto su tutto. La serata si è aperta con una sessione di lightning talk aperti a tutti, seguita da una demo live su Python e intelligenza artificiale generativa.",
+    "fullDescriptionEn": "Summer Edition 2024 was one of the most attended evenings of the year. Despite the heat, the enthusiasm for Python won out. The evening opened with a lightning talk session open to everyone, followed by a live demo on Python and generative artificial intelligence.",
+    "attendees": 32,
+    "url": "https://www.meetup.com/python-catania/events/302671524/",
+    "gallery": [
+      "/images/events/event-302671524.jpg"
+    ],
+    "speakers": [
+      { "name": "Claudio Faro", "topic": "Python e LLM: costruire un chatbot in 30 minuti", "topicEn": "Python and LLMs: build a chatbot in 30 minutes" }
+    ]
+  },
+  {
+    "id": 301402271,
+    "title": "Meetup Python Catania - After PyCon Italia 2024",
+    "date": "2024-06-17",
+    "image": "/images/events/event-301402271.jpg",
+    "description": "La community Python Catania si incontra per condividere le esperienze e i talk del PyCon Italia 2024.",
+    "descriptionEn": "The Python Catania community meets to share experiences and talks from PyCon Italia 2024.",
+    "fullDescription": "Dopo il PyCon Italia 2024 ci siamo ritrovati per condividere impressioni, talk preferiti e nuovi contatti fatti alla conferenza. Chi è andato ha raccontato le sessioni più interessanti, i workshop seguiti e le idee portate a casa. Un modo per far vivere il PyCon anche a chi non ha potuto partecipare.",
+    "fullDescriptionEn": "After PyCon Italia 2024 we gathered to share impressions, favourite talks and new contacts made at the conference. Those who attended talked about the most interesting sessions, the workshops they followed and the ideas they brought home. A way to let the PyCon live on for those who could not attend.",
+    "attendees": 39,
+    "url": "https://www.meetup.com/python-catania/events/301402271/",
+    "gallery": [
+      "/images/events/event-301402271.jpg"
+    ],
+    "speakers": [
+      { "name": "Salvatore Rapisarda", "topic": "PyCon Italia 2024: i miei highlight", "topicEn": "PyCon Italia 2024: my highlights" },
+      { "name": "Stefano Borzi", "topic": "Talk report: Django e il futuro del web Python", "topicEn": "Talk report: Django and the future of Python web" }
+    ]
+  },
+  {
+    "id": 298457913,
+    "title": "Python Meetup Catania - Back to Python Future",
+    "date": "2024-02-01",
+    "image": "/images/events/event-298457913.jpg",
+    "description": "La community di Python Catania si incontra nuovamente per condividere insieme le novità legate al mondo del linguaggio Python e prepararsi al PyCon Italia 2024.",
+    "descriptionEn": "The Python Catania community meets again to share news from the Python world and get ready for PyCon Italia 2024.",
+    "fullDescription": "Dopo una pausa, la community di Python Catania si è rimessa in moto con questo meetup di rientro. L'evento ha segnato un nuovo inizio: nuova location, nuovi volti e tanta energia. Abbiamo parlato di Python 3.12, del PyCon Italia in arrivo e di come la community vuole crescere nel 2024.",
+    "fullDescriptionEn": "After a break, the Python Catania community got back on track with this comeback meetup. The event marked a new beginning: new location, new faces and plenty of energy. We talked about Python 3.12, the upcoming PyCon Italia and how the community wants to grow in 2024.",
+    "attendees": 30,
+    "url": "https://www.meetup.com/python-catania/events/298457913/",
+    "gallery": [
+      "/images/events/event-298457913.jpg"
+    ],
+    "speakers": [
+      { "name": "Matteo Jacopo Schembri", "topic": "Python 3.12: cosa c'è di nuovo", "topicEn": "Python 3.12: what's new" },
+      { "name": "Salvatore Rapisarda", "topic": "Roadmap Python Catania 2024", "topicEn": "Python Catania roadmap 2024" }
+    ]
+  }
+]
