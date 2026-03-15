@@ -12,7 +12,7 @@
             @if (event.image) {
               <div
                 class="h-48 bg-cover bg-center"
-                [style.background-image]="'url(' + event.image + ')'"
+                [style.background-image]="'url(' + baseUrl + event.image + ')'"
                 role="img"
                 [attr.aria-label]="event.title"
               >

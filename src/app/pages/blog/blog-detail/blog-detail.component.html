@@ -11,7 +11,7 @@
       @if (post()!.coverImage) {
         <div
           class="mb-8 h-64 rounded-(--radius) bg-cover bg-center"
-          [style.background-image]="'url(' + post()!.coverImage + ')'"
+          [style.background-image]="'url(' + baseUrl + post()!.coverImage + ')'"
           role="img"
           [attr.aria-label]="activeLang() === 'en' ? post()!.titleEn : post()!.title"
         ></div>

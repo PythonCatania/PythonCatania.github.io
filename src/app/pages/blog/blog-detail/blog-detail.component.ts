@@ -28,7 +28,7 @@ export class BlogDetailComponent {
   private readonly http = inject(HttpClient);
   private readonly route = inject(ActivatedRoute);
   private readonly translocoService = inject(TranslocoService);
-  private readonly baseUrl = inject(BASE_URL);
+  protected readonly baseUrl = inject(BASE_URL);
 
   protected readonly post = signal<BlogPost | null>(null);
   protected readonly activeLang = toSignal(this.translocoService.langChanges$, {

@@ -11,7 +11,7 @@
       @if (event()!.image) {
         <div
           class="mb-8 h-64 rounded-(--radius) bg-cover bg-center"
-          [style.background-image]="'url(' + event()!.image + ')'"
+          [style.background-image]="'url(' + baseUrl + event()!.image + ')'"
           role="img"
           [attr.aria-label]="event()!.title"
         ></div>
@@ -64,7 +64,7 @@
               <li>
                 <div
                   class="h-40 rounded-(--radius) bg-cover bg-center"
-                  [style.background-image]="'url(' + image + ')'"
+                  [style.background-image]="'url(' + baseUrl + image + ')'"
                   role="img"
                   [attr.aria-label]="event()!.title"
                 ></div>

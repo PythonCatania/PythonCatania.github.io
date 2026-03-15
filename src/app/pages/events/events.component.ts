@@ -25,7 +25,7 @@ interface MeetupEvent {
 export class EventsComponent {
   private readonly http = inject(HttpClient);
   private readonly translocoService = inject(TranslocoService);
-  private readonly baseUrl = inject(BASE_URL);
+  protected readonly baseUrl = inject(BASE_URL);
   protected readonly events = signal<MeetupEvent[]>([]);
   protected readonly activeLang = toSignal(this.translocoService.langChanges$, {
     initialValue: this.translocoService.getActiveLang(),
