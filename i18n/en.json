@@ -1,0 +1,67 @@
+{
+  "nav": {
+    "home": "PyCatania",
+    "nextMeetup": "Next Meetup",
+    "callForSpeakers": "Propose a talk",
+    "contacts": "Contacts",
+    "supporters": "Supporters",
+    "community": "Community",
+    "blog": "Blog",
+    "events": "Events",
+    "about": "About us"
+  },
+  "hero": {
+    "title": "Python Catania 🐘🌋",
+    "tagline": "The right place to meet Python language enthusiasts from Catania."
+  },
+  "nextMeetup": {
+    "title": "Next Meetup",
+    "description": "We organise regular meetups to share knowledge, experiences and passion for Python. Everyone is welcome, from beginners to experts.",
+    "join": "Join us"
+  },
+  "contact": {
+    "title": "Contacts",
+    "groups": {
+      "chat": "Chat",
+      "social": "Social",
+      "code": "Code"
+    }
+  },
+  "supporters": {
+    "title": "Supporters",
+    "groups": {
+      "networks": "Networks",
+      "mediaPartners": "Media Partners",
+      "communityPartners": "Community Partners"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Read more",
+    "noContent": "No articles available.",
+    "backToBlog": "Back to blog"
+  },
+  "events": {
+    "title": "Events",
+    "past": "Past events",
+    "noContent": "No events available.",
+    "attendees": "attendees",
+    "backToEvents": "Back to events",
+    "speakers": "Speakers",
+    "gallery": "Gallery",
+    "viewOnMeetup": "View on Meetup"
+  },
+  "about": {
+    "title": "About us",
+    "description": "The team that organises and leads the Python Catania community.",
+    "role": "Organiser"
+  },
+  "callForSpeakers": {
+    "title": "Call for Speakers",
+    "description": "Got an idea, a project or an experience to share? Getting on stage is easier than you think. Our community welcomes talks at every level: from personal side-project stories to deep technical dives.",
+    "cta": "Propose a talk"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}
