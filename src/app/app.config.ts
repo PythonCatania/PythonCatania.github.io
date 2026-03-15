@@ -7,11 +7,13 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     {
       provide: IMAGE_LOADER,
-      useFactory: (document: Document) => (config: ImageLoaderConfig): string => {
-        const base = document.querySelector('base')?.getAttribute('href') ?? '/';
-        const baseNormalized = base.endsWith('/') ? base.slice(0, -1) : base;
-        return baseNormalized + config.src;
-      },
+      useFactory:
+        (document: Document) =>
+        (config: ImageLoaderConfig): string => {
+          const base = document.querySelector('base')?.getAttribute('href') ?? '/';
+          const baseNormalized = base.endsWith('/') ? base.slice(0, -1) : base;
+          return baseNormalized + config.src;
+        },
       deps: [DOCUMENT],
     },
   ],

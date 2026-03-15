@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@source "./**/*.{html,ts}";
+@import 'tailwindcss';
+@source './**/*.{html,ts}';
 
 @theme {
   --color-primary: #f50000;
