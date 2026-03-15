@@ -1,4 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ContactButtonComponent } from './contact-button/contact-button.component';
+import { ContactGroupComponent } from './contact-group/contact-group.component';
 import { IconFacebookComponent } from '../shared/icons/icon-facebook/icon-facebook.component';
 import { IconGdgComponent } from '../shared/icons/icon-gdg/icon-gdg.component';
 import { IconGithubComponent } from '../shared/icons/icon-github/icon-github.component';
@@ -14,17 +16,19 @@ import { IconYoutubeComponent } from '../shared/icons/icon-youtube/icon-youtube.
 @Component({
   selector: 'app-contact',
   imports: [
-    IconTelegramComponent,
+    ContactButtonComponent,
+    ContactGroupComponent,
     IconFacebookComponent,
-    IconLinkedinComponent,
-    IconYoutubeComponent,
-    IconInstagramComponent,
-    IconMastodonComponent,
-    IconGithubComponent,
-    IconPsfComponent,
-    IconPythonItaliaComponent,
-    IconPyconItaliaComponent,
     IconGdgComponent,
+    IconGithubComponent,
+    IconInstagramComponent,
+    IconLinkedinComponent,
+    IconMastodonComponent,
+    IconPsfComponent,
+    IconPyconItaliaComponent,
+    IconPythonItaliaComponent,
+    IconTelegramComponent,
+    IconYoutubeComponent,
   ],
   templateUrl: './contact.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -4,153 +4,120 @@
   <div class="mt-8 flex flex-wrap justify-center gap-12">
     <!-- Column: Chat + Social -->
     <div class="flex flex-col gap-8">
-      <div class="flex flex-col items-center gap-2">
-        <h3 class="mb-2 text-[0.85rem] tracking-[0.08em] text-[var(--muted)] uppercase">Chat</h3>
-        <a
+      <app-contact-group title="Chat">
+        <app-contact-button
           id="telegram"
           rel="me noopener"
-          target="_blank"
           href="https://t.me/pythoncatania"
-          role="button"
-          class="w-40 border-[#2aabee] bg-[#2aabee] text-white hover:border-[#1d96d4] hover:bg-[#1d96d4]"
-          aria-label="Telegram"
+          ariaLabel="Telegram"
+          buttonClass="border-[#2aabee] bg-[#2aabee] text-white hover:border-[#1d96d4] hover:bg-[#1d96d4]"
         >
-          <app-icon-telegram />Telegram</a
-        >
-      </div>
+          <app-icon-telegram />Telegram
+        </app-contact-button>
+      </app-contact-group>
 
-      <div class="flex flex-col items-center gap-5">
-        <h3 class="mb-2 text-[0.85rem] tracking-[0.08em] text-(--muted) uppercase">Social</h3>
-        <a
+      <app-contact-group title="Social" gap="gap-5">
+        <app-contact-button
           id="facebook"
           rel="me noopener"
-          target="_blank"
           href="https://www.facebook.com/PythonCatania"
-          role="button"
-          class="hover:border-secondary-hover hover:bg-secondary-hover border-secondary bg-secondary w-40 text-white"
-          aria-label="Facebook"
+          ariaLabel="Facebook"
+          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
         >
-          <app-icon-facebook />Facebook</a
-        >
-        <a
+          <app-icon-facebook />Facebook
+        </app-contact-button>
+        <app-contact-button
           id="linkedin"
           rel="me noopener"
-          target="_blank"
           href="https://www.linkedin.com/groups/9895708/"
-          role="button"
-          class="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover w-40 text-white"
-          aria-label="LinkedIn"
+          ariaLabel="LinkedIn"
+          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
         >
-          <app-icon-linkedin />LinkedIn</a
-        >
-        <a
+          <app-icon-linkedin />LinkedIn
+        </app-contact-button>
+        <app-contact-button
           id="youtube"
           rel="me noopener"
-          target="_blank"
           href="https://www.youtube.com/@pythoncatania"
-          role="button"
-          class="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover w-40 text-white"
-          aria-label="YouTube"
+          ariaLabel="YouTube"
+          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
         >
-          <app-icon-youtube />YouTube</a
-        >
-        <a
+          <app-icon-youtube />YouTube
+        </app-contact-button>
+        <app-contact-button
           id="instagram"
           rel="me noopener"
-          target="_blank"
           href="https://www.instagram.com/pythoncatania/"
-          role="button"
-          class="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover w-40 text-white"
-          aria-label="Instagram"
+          ariaLabel="Instagram"
+          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
         >
-          <app-icon-instagram />Instagram</a
-        >
-        <a
+          <app-icon-instagram />Instagram
+        </app-contact-button>
+        <app-contact-button
           id="mastodon"
           rel="me noopener"
-          target="_blank"
           href="https://social.python.it/@pycatania"
-          role="button"
-          class="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover w-40 text-white"
-          aria-label="Mastodon"
+          ariaLabel="Mastodon"
+          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
         >
-          <app-icon-mastodon />Mastodon</a
-        >
-      </div>
+          <app-icon-mastodon />Mastodon
+        </app-contact-button>
+      </app-contact-group>
     </div>
 
-    <!-- Column: Code + Networks + Media Partners + Community Partners -->
+    <!-- Column: Code + Networks + Partners -->
     <div class="flex flex-col gap-8">
-      <div class="flex flex-col items-center gap-2">
-        <h3 class="mb-2 text-[0.85rem] tracking-[0.08em] text-(--muted) uppercase">Code</h3>
-        <a
+      <app-contact-group title="Code">
+        <app-contact-button
           id="github"
           rel="me noopener"
-          target="_blank"
           href="https://github.com/PythonCatania"
-          role="button"
-          class="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover w-40 text-white"
-          aria-label="GitHub"
+          ariaLabel="GitHub"
         >
-          <app-icon-github />GitHub</a
-        >
-      </div>
+          <app-icon-github />GitHub
+        </app-contact-button>
+      </app-contact-group>
 
-      <div class="flex flex-col items-center gap-2">
-        <h3 class="mb-2 text-[0.85rem] tracking-[0.08em] text-[var(--muted)] uppercase">Networks</h3>
-        <a
+      <app-contact-group title="Networks">
+        <app-contact-button
           id="python-software-foundation"
-          rel="noopener"
-          target="_blank"
           href="https://www.python.org/"
-          role="button"
-          class="w-40 border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]"
-          aria-label="Python Software Foundation"
+          ariaLabel="Python Software Foundation"
+          buttonClass="border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]"
         >
-          <app-icon-psf /><abbr title="Python Software Foundation">PSF</abbr></a
-        >
-        <a
+          <app-icon-psf /><abbr title="Python Software Foundation">PSF</abbr>
+        </app-contact-button>
+        <app-contact-button
           id="python-italia"
-          rel="noopener"
-          target="_blank"
           href="https://www.python.it/"
-          role="button"
-          class="w-40 border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]"
-          aria-label="Python Italia"
+          ariaLabel="Python Italia"
+          buttonClass="border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]"
         >
-          <app-icon-python-italia />Python&nbsp;Italia</a
-        >
-      </div>
+          <app-icon-python-italia />Python&nbsp;Italia
+        </app-contact-button>
+      </app-contact-group>
 
-      <div class="flex flex-col items-center gap-2">
-        <h3 class="mb-2 text-[0.85rem] tracking-[0.08em] text-[var(--muted)] uppercase">Media Partners</h3>
-        <a
+      <app-contact-group title="Media Partners">
+        <app-contact-button
           id="pycon-italia"
-          rel="noopener"
-          target="_blank"
           href="https://www.pycon.it/"
-          role="button"
-          class="w-40 border-white bg-transparent text-white hover:border-white hover:bg-white/10"
-          aria-label="PyCon Italia"
+          ariaLabel="PyCon Italia"
+          buttonClass="border-white bg-transparent text-white hover:border-white hover:bg-white/10"
         >
-          <app-icon-pycon-italia />PyCon&nbsp;Italia</a
-        >
-      </div>
+          <app-icon-pycon-italia />PyCon&nbsp;Italia
+        </app-contact-button>
+      </app-contact-group>
 
-      <div class="flex flex-col items-center gap-2">
-        <h3 class="mb-2 text-[0.85rem] tracking-[0.08em] text-[var(--muted)] uppercase">Community Partners</h3>
-        <a
+      <app-contact-group title="Community Partners">
+        <app-contact-button
           id="google-developer-group-catania"
-          rel="noopener"
-          target="_blank"
           href="https://gdg.community.dev/gdg-catania/"
-          role="button"
-          class="w-40 border-white bg-transparent text-white hover:border-white hover:bg-white/10"
-          aria-label="Google Developer Group Catania"
+          ariaLabel="Google Developer Group Catania"
+          buttonClass="border-white bg-transparent text-white hover:border-white hover:bg-white/10"
         >
-          <app-icon-gdg /><abbr title="Google Developer Group">GDG</abbr>Catania</a
-        >
-      </div>
+          <app-icon-gdg /><abbr title="Google Developer Group">GDG</abbr>&nbsp;Catania
+        </app-contact-button>
+      </app-contact-group>
     </div>
   </div>
 </section>
