@@ -1,4 +1,8 @@
-import { Routes } from '@angular/router';
+import { inject } from '@angular/core';
+import { CanMatchFn, Routes } from '@angular/router';
+import { DebugService } from './services/debug.service';
+
+const debugGuard: CanMatchFn = () => inject(DebugService).isEnabled;
 
 export const routes: Routes = [
   {
@@ -7,6 +11,7 @@ export const routes: Routes = [
   },
   {
     path: 'blog',
+    canMatch: [debugGuard],
     loadComponent: () => import('./pages/blog/blog.component').then((module) => module.BlogComponent),
   },
   {
@@ -22,6 +27,7 @@ export const routes: Routes = [
   },
   {
     path: 'blog/:id',
+    canMatch: [debugGuard],
     loadComponent: () =>
       import('./pages/blog/blog-detail/blog-detail.component').then(
         (module) => module.BlogDetailComponent,

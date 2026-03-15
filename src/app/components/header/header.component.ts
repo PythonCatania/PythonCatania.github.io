@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/cor
 import { NgOptimizedImage } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
+import { DebugService } from '../../services/debug.service';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,7 @@ import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 export class HeaderComponent {
   private readonly translocoService = inject(TranslocoService);
   private readonly router = inject(Router);
+  protected readonly debugService = inject(DebugService);
   protected readonly activeLang = signal(this.translocoService.getActiveLang());
 
   protected toggleLanguage(): void {

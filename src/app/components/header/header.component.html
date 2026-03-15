@@ -94,15 +94,17 @@
                 >{{ 'nav.about' | transloco }}</a
               >
             </li>
-            <li class="block">
-              <a
-                routerLink="/blog"
-                routerLinkActive="text-(--color-primary)"
-                (click)="closeDropdown($event)"
-                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
-                >{{ 'nav.blog' | transloco }}</a
-              >
-            </li>
+            @if (debugService.isEnabled) {
+              <li class="block">
+                <a
+                  routerLink="/blog"
+                  routerLinkActive="text-(--color-primary)"
+                  (click)="closeDropdown($event)"
+                  class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                  >{{ 'nav.blog' | transloco }}</a
+                >
+              </li>
+            }
             <li class="block">
               <a
                 routerLink="/events"
@@ -211,14 +213,16 @@
                 >{{ 'nav.about' | transloco }}</a
               >
             </li>
-            <li class="block">
-              <a
-                routerLink="/blog"
-                (click)="closeDropdown($event)"
-                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
-                >{{ 'nav.blog' | transloco }}</a
-              >
-            </li>
+            @if (debugService.isEnabled) {
+              <li class="block">
+                <a
+                  routerLink="/blog"
+                  (click)="closeDropdown($event)"
+                  class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                  >{{ 'nav.blog' | transloco }}</a
+                >
+              </li>
+            }
             <li class="block">
               <a
                 routerLink="/events"
