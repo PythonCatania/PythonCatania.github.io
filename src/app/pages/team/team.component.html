@@ -4,7 +4,9 @@
     <p class="mb-10 text-center text-(--color-muted)">{{ 'about.description' | transloco }}</p>
     <ul class="grid list-none grid-cols-2 gap-8 p-0">
       @for (member of members; track member.name) {
-        <li class="flex flex-col items-center gap-4 rounded-(--radius) border border-(--border) bg-(--surface) p-8 text-center">
+        <li
+          class="flex flex-col items-center gap-4 rounded-(--radius) border border-(--border) bg-(--surface) p-8 text-center"
+        >
           <img
             [ngSrc]="member.image"
             width="160"
