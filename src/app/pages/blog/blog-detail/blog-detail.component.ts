@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { RouterLink } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
-import { BASE_URL } from '../../app.config';
+import { BASE_URL } from '../../../app.config';
 
 interface BlogPost {
   readonly id: number;
@@ -11,29 +11,39 @@ interface BlogPost {
   readonly titleEn: string;
   readonly date: string;
   readonly author: string;
+  readonly coverImage?: string;
   readonly content: string;
   readonly contentEn: string;
-  readonly url: string;
+  readonly fullContent: string;
+  readonly fullContentEn: string;
 }
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-blog-detail',
   imports: [TranslocoModule, RouterLink],
-  templateUrl: './blog.component.html',
+  templateUrl: './blog-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BlogComponent {
+export class BlogDetailComponent {
   private readonly http = inject(HttpClient);
+  private readonly route = inject(ActivatedRoute);
   private readonly translocoService = inject(TranslocoService);
   private readonly baseUrl = inject(BASE_URL);
-  protected readonly posts = signal<BlogPost[]>([]);
+
+  protected readonly post = signal<BlogPost | null>(null);
   protected readonly activeLang = toSignal(this.translocoService.langChanges$, {
     initialValue: this.translocoService.getActiveLang(),
   });
 
   constructor() {
-    this.http.get<BlogPost[]>(`${this.baseUrl}/data/blog-posts.json`).subscribe((data) => {
-      this.posts.set(data);
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.http.get<BlogPost[]>(`${this.baseUrl}/data/blog-posts.json`).subscribe((posts) => {
+      const found = posts.find((post) => post.id === id) ?? null;
+      this.post.set(found);
     });
+  }
+
+  protected formatContent(content: string): string {
+    return content.replace(/\n/g, '<br>');
   }
 }

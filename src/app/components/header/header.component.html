@@ -89,6 +89,7 @@
               <a
                 routerLink="/chi-siamo"
                 routerLinkActive="text-(--color-primary)"
+                (click)="closeDropdown($event)"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.about' | transloco }}</a
               >
@@ -97,6 +98,7 @@
               <a
                 routerLink="/blog"
                 routerLinkActive="text-(--color-primary)"
+                (click)="closeDropdown($event)"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.blog' | transloco }}</a
               >
@@ -105,6 +107,7 @@
               <a
                 routerLink="/events"
                 routerLinkActive="text-(--color-primary)"
+                (click)="closeDropdown($event)"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.events' | transloco }}</a
               >
@@ -203,6 +206,7 @@
             <li class="block">
               <a
                 routerLink="/chi-siamo"
+                (click)="closeDropdown($event)"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.about' | transloco }}</a
               >
@@ -210,6 +214,7 @@
             <li class="block">
               <a
                 routerLink="/blog"
+                (click)="closeDropdown($event)"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.blog' | transloco }}</a
               >
@@ -217,6 +222,7 @@
             <li class="block">
               <a
                 routerLink="/events"
+                (click)="closeDropdown($event)"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.events' | transloco }}</a
               >

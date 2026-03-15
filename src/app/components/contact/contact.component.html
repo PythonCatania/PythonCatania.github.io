@@ -1,7 +1,8 @@
 <section id="contact" class="bg-(--surface) px-4 py-16 text-center">
   <h2>{{ 'contact.title' | transloco }}</h2>
 
-  <div class="mt-8 flex flex-wrap justify-center gap-12">
+  <!-- CHAT + CODE side by side -->
+  <div class="mt-8 flex flex-wrap justify-center gap-8">
     <app-contact-group [title]="'contact.groups.chat' | transloco">
       <app-contact-button
         id="telegram"
@@ -14,7 +15,19 @@
       </app-contact-button>
     </app-contact-group>
 
-    <app-contact-group [title]="'contact.groups.social' | transloco" gap="gap-5">
+    <app-contact-group [title]="'contact.groups.code' | transloco">
+      <app-contact-button id="github" rel="me noopener" href="https://github.com/PythonCatania" ariaLabel="GitHub">
+        <app-icon-github />GitHub
+      </app-contact-button>
+    </app-contact-group>
+  </div>
+
+  <!-- SOCIAL horizontal row -->
+  <div class="mt-8 flex flex-col items-center gap-3">
+    <h3 class="text-[0.85rem] tracking-[0.08em] text-(--color-muted) uppercase">
+      {{ 'contact.groups.social' | transloco }}
+    </h3>
+    <div class="flex flex-wrap justify-center gap-3">
       <app-contact-button
         id="facebook"
         rel="me noopener"
@@ -60,12 +73,6 @@
       >
         <app-icon-mastodon />Mastodon
       </app-contact-button>
-    </app-contact-group>
-
-    <app-contact-group [title]="'contact.groups.code' | transloco">
-      <app-contact-button id="github" rel="me noopener" href="https://github.com/PythonCatania" ariaLabel="GitHub">
-        <app-icon-github />GitHub
-      </app-contact-button>
-    </app-contact-group>
+    </div>
   </div>
 </section>

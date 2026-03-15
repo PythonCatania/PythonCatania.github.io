@@ -1,0 +1,38 @@
+<section class="px-4 py-16">
+  <div class="mx-auto max-w-3xl">
+    <a
+      routerLink="/blog"
+      class="mb-8 inline-flex items-center gap-1 text-sm text-(--color-muted) no-underline hover:text-(--color-primary)"
+      >← {{ 'blog.backToBlog' | transloco }}</a
+    >
+
+    @if (post()) {
+      <!-- Cover image -->
+      @if (post()!.coverImage) {
+        <div
+          class="mb-8 h-64 rounded-(--radius) bg-cover bg-center"
+          [style.background-image]="'url(' + post()!.coverImage + ')'"
+          role="img"
+          [attr.aria-label]="activeLang() === 'en' ? post()!.titleEn : post()!.title"
+        ></div>
+      }
+
+      <!-- Title + meta -->
+      <h1 class="mb-2 text-3xl font-bold">
+        {{ activeLang() === 'en' ? post()!.titleEn : post()!.title }}
+      </h1>
+      <p class="mb-8 text-sm text-(--color-muted)">
+        📅 {{ post()!.date }} &nbsp;·&nbsp; ✍️ {{ post()!.author }}
+      </p>
+
+      <!-- Full content -->
+      <div class="prose leading-relaxed text-(--color-muted)">
+        @for (paragraph of (activeLang() === 'en' ? post()!.fullContentEn : post()!.fullContent).split('\n\n'); track $index) {
+          <p class="mb-4">{{ paragraph }}</p>
+        }
+      </div>
+    } @else {
+      <p class="text-center text-(--color-muted)">{{ 'blog.noContent' | transloco }}</p>
+    }
+  </div>
+</section>

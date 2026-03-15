@@ -38,13 +38,18 @@
   "blog": {
     "title": "Blog",
     "readMore": "Leggi di più",
-    "noContent": "Nessun articolo disponibile."
+    "noContent": "Nessun articolo disponibile.",
+    "backToBlog": "Torna al blog"
   },
   "events": {
     "title": "Eventi",
     "past": "Eventi passati",
     "noContent": "Nessun evento disponibile.",
-    "attendees": "partecipanti"
+    "attendees": "partecipanti",
+    "backToEvents": "Torna agli eventi",
+    "speakers": "Speaker",
+    "gallery": "Galleria",
+    "viewOnMeetup": "Vedi su Meetup"
   },
   "about": {
     "title": "Chi siamo",

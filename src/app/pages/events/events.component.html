@@ -8,7 +8,7 @@
       @for (event of events(); track event.id) {
         <li class="overflow-hidden rounded-(--radius) border border-(--border) bg-(--surface)">
           <!-- Image banner behind title -->
-          <a [href]="event.url" target="_blank" rel="noopener" class="relative block no-underline">
+          <a [routerLink]="['/events', event.id]" class="relative block no-underline">
             @if (event.image) {
               <div
                 class="h-48 bg-cover bg-center"

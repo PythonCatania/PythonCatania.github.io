@@ -11,9 +11,7 @@
           <h2 class="mb-2 text-xl font-semibold">{{ activeLang() === 'en' ? post.titleEn : post.title }}</h2>
           <p class="mb-4 text-(--color-muted)">{{ activeLang() === 'en' ? post.contentEn : post.content }}</p>
           <a
-            [href]="post.url"
-            target="_blank"
-            rel="noopener"
+            [routerLink]="['/blog', post.id]"
             class="inline-flex items-center gap-1 text-(--color-primary) no-underline hover:underline"
             >{{ 'blog.readMore' | transloco }} →</a
           >

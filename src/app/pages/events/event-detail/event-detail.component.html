@@ -1,0 +1,89 @@
+<section class="px-4 py-16">
+  <div class="mx-auto max-w-3xl">
+    <a
+      routerLink="/events"
+      class="mb-8 inline-flex items-center gap-1 text-sm text-(--color-muted) no-underline hover:text-(--color-primary)"
+      >← {{ 'events.backToEvents' | transloco }}</a
+    >
+
+    @if (event()) {
+      <!-- Cover image -->
+      @if (event()!.image) {
+        <div
+          class="mb-8 h-64 rounded-(--radius) bg-cover bg-center"
+          [style.background-image]="'url(' + event()!.image + ')'"
+          role="img"
+          [attr.aria-label]="event()!.title"
+        ></div>
+      }
+
+      <!-- Title + meta -->
+      <h1 class="mb-2 text-3xl font-bold">{{ event()!.title }}</h1>
+      <p class="mb-6 text-sm text-(--color-muted)">
+        📅 {{ event()!.date }} &nbsp;·&nbsp; 👥 {{ event()!.attendees }}
+        {{ 'events.attendees' | transloco }}
+      </p>
+
+      <!-- Full description -->
+      <p class="mb-10 leading-relaxed text-(--color-muted)">
+        {{ activeLang() === 'en' ? event()!.fullDescriptionEn : event()!.fullDescription }}
+      </p>
+
+      <!-- Speakers -->
+      @if (event()!.speakers.length > 0) {
+        <div class="mb-10">
+          <h2 class="mb-4 text-xl font-semibold">{{ 'events.speakers' | transloco }}</h2>
+          <ul class="list-none p-0">
+            @for (speaker of event()!.speakers; track speaker.name) {
+              <li
+                class="mb-3 flex items-start gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-4"
+              >
+                <div
+                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-(--color-primary)/15 text-lg font-bold text-(--color-primary)"
+                >
+                  {{ speaker.name.charAt(0) }}
+                </div>
+                <div>
+                  <p class="font-medium">{{ speaker.name }}</p>
+                  <p class="text-sm text-(--color-muted)">
+                    {{ activeLang() === 'en' ? speaker.topicEn : speaker.topic }}
+                  </p>
+                </div>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      <!-- Gallery -->
+      @if (event()!.gallery.length > 0) {
+        <div class="mb-10">
+          <h2 class="mb-4 text-xl font-semibold">{{ 'events.gallery' | transloco }}</h2>
+          <ul class="grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3">
+            @for (image of event()!.gallery; track image) {
+              <li>
+                <div
+                  class="h-40 rounded-(--radius) bg-cover bg-center"
+                  [style.background-image]="'url(' + image + ')'"
+                  role="img"
+                  [attr.aria-label]="event()!.title"
+                ></div>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+
+      <!-- External link -->
+      <a
+        [href]="event()!.url"
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-1 text-(--color-primary) no-underline hover:underline"
+        >{{ 'events.viewOnMeetup' | transloco }} →</a
+      >
+    } @else {
+      <p class="text-center text-(--color-muted)">{{ 'events.noContent' | transloco }}</p>
+    }
+  </div>
+</section>

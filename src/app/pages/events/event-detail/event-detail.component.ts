@@ -1,9 +1,15 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { RouterLink } from '@angular/router';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
-import { BASE_URL } from '../../app.config';
+import { BASE_URL } from '../../../app.config';
+
+interface Speaker {
+  readonly name: string;
+  readonly topic: string;
+  readonly topicEn: string;
+}
 
 interface MeetupEvent {
   readonly id: number;
@@ -12,28 +18,36 @@ interface MeetupEvent {
   readonly image?: string;
   readonly description: string;
   readonly descriptionEn: string;
+  readonly fullDescription: string;
+  readonly fullDescriptionEn: string;
   readonly attendees: number;
   readonly url: string;
+  readonly gallery: string[];
+  readonly speakers: Speaker[];
 }
 
 @Component({
-  selector: 'app-events',
+  selector: 'app-event-detail',
   imports: [TranslocoModule, RouterLink],
-  templateUrl: './events.component.html',
+  templateUrl: './event-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class EventsComponent {
+export class EventDetailComponent {
   private readonly http = inject(HttpClient);
+  private readonly route = inject(ActivatedRoute);
   private readonly translocoService = inject(TranslocoService);
   private readonly baseUrl = inject(BASE_URL);
-  protected readonly events = signal<MeetupEvent[]>([]);
+
+  protected readonly event = signal<MeetupEvent | null>(null);
   protected readonly activeLang = toSignal(this.translocoService.langChanges$, {
     initialValue: this.translocoService.getActiveLang(),
   });
 
   constructor() {
-    this.http.get<MeetupEvent[]>(`${this.baseUrl}/data/events.json`).subscribe((data) => {
-      this.events.set(data);
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.http.get<MeetupEvent[]>(`${this.baseUrl}/data/events.json`).subscribe((events) => {
+      const found = events.find((event) => event.id === id) ?? null;
+      this.event.set(found);
     });
   }
 }

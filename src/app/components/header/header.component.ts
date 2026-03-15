@@ -20,6 +20,13 @@ export class HeaderComponent {
     this.activeLang.set(next);
   }
 
+  protected closeDropdown(event: Event): void {
+    let element = (event.target as HTMLElement).closest('details');
+    if (element) {
+      element.open = false;
+    }
+  }
+
   protected scrollTo(event: Event, sectionId: string): void {
     event.preventDefault();
     const element = document.getElementById(sectionId);

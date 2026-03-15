@@ -14,6 +14,20 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/events/events.component').then((module) => module.EventsComponent),
   },
   {
+    path: 'events/:id',
+    loadComponent: () =>
+      import('./pages/events/event-detail/event-detail.component').then(
+        (module) => module.EventDetailComponent,
+      ),
+  },
+  {
+    path: 'blog/:id',
+    loadComponent: () =>
+      import('./pages/blog/blog-detail/blog-detail.component').then(
+        (module) => module.BlogDetailComponent,
+      ),
+  },
+  {
     path: 'chi-siamo',
     loadComponent: () => import('./pages/team/team.component').then((module) => module.TeamComponent),
   },

@@ -1,8 +1,13 @@
 <section id="supporters" class="px-4 py-16 text-center">
   <h2>{{ 'supporters.title' | transloco }}</h2>
 
-  <div class="mt-8 flex flex-wrap justify-center gap-12">
-    <app-contact-group [title]="'supporters.groups.networks' | transloco">
+  <ul class="mt-10 flex list-none flex-wrap justify-center gap-10 p-0">
+    <li class="flex flex-col items-center gap-4">
+      <div
+        class="flex h-24 w-24 items-center justify-center rounded-(--radius) border border-(--border) bg-(--surface) text-7xl"
+      >
+        <app-icon-psf />
+      </div>
       <app-contact-button
         id="python-software-foundation"
         href="https://www.python.org/"
@@ -11,6 +16,14 @@
       >
         <app-icon-psf /><abbr title="Python Software Foundation">PSF</abbr>
       </app-contact-button>
+    </li>
+
+    <li class="flex flex-col items-center gap-4">
+      <div
+        class="flex h-24 w-24 items-center justify-center rounded-(--radius) border border-(--border) bg-(--surface) text-7xl"
+      >
+        <app-icon-python-italia />
+      </div>
       <app-contact-button
         id="python-italia"
         href="https://www.python.it/"
@@ -19,9 +32,14 @@
       >
         <app-icon-python-italia />Python&nbsp;Italia
       </app-contact-button>
-    </app-contact-group>
+    </li>
 
-    <app-contact-group [title]="'supporters.groups.mediaPartners' | transloco">
+    <li class="flex flex-col items-center gap-4">
+      <div
+        class="flex h-24 w-24 items-center justify-center rounded-(--radius) border border-(--border) bg-(--surface) text-7xl"
+      >
+        <app-icon-pycon-italia />
+      </div>
       <app-contact-button
         id="pycon-italia"
         href="https://www.pycon.it/"
@@ -30,9 +48,14 @@
       >
         <app-icon-pycon-italia />PyCon&nbsp;Italia
       </app-contact-button>
-    </app-contact-group>
+    </li>
 
-    <app-contact-group [title]="'supporters.groups.communityPartners' | transloco">
+    <li class="flex flex-col items-center gap-4">
+      <div
+        class="flex h-24 w-24 items-center justify-center rounded-(--radius) border border-(--border) bg-(--surface) text-7xl"
+      >
+        <app-icon-gdg />
+      </div>
       <app-contact-button
         id="google-developer-group-catania"
         href="https://gdg.community.dev/gdg-catania/"
@@ -41,6 +64,6 @@
       >
         <app-icon-gdg /><abbr title="Google Developer Group">GDG</abbr>&nbsp;Catania
       </app-contact-button>
-    </app-contact-group>
-  </div>
+    </li>
+  </ul>
 </section>
