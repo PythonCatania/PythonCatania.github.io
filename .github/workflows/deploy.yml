@@ -31,8 +31,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Compute base href
+        id: base-href
+        run: |
+          if [ "${{ github.event.repository.name }}" = "${{ github.repository_owner }}.github.io" ]; then
+            echo "value=/" >> $GITHUB_OUTPUT
+          else
+            echo "value=/${{ github.event.repository.name }}/" >> $GITHUB_OUTPUT
+          fi
+
       - name: Build
-        run: npm run build
+        run: npm run build -- --base-href="${{ steps.base-href.outputs.value }}"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
