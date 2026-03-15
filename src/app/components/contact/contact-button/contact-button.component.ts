@@ -1,4 +1,17 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+
+const VARIANT_CLASSES = {
+  primary:
+    'border-(--color-primary) bg-(--color-primary) text-white hover:border-(--color-primary-hover) hover:bg-(--color-primary-hover) hover:text-white',
+  secondary:
+    'border-secondary bg-secondary text-white hover:border-secondary-hover hover:bg-secondary-hover hover:text-white',
+  telegram: 'border-[#2aabee] bg-[#2aabee] text-white hover:border-[#1d96d4] hover:bg-[#1d96d4] hover:text-white',
+  'primary-outline':
+    'border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]',
+  'white-outline': 'border-white bg-transparent text-white hover:border-white hover:bg-white/10',
+} as const;
+
+type ButtonVariant = keyof typeof VARIANT_CLASSES;
 
 @Component({
   selector: 'app-contact-button',
@@ -10,8 +23,8 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
       target="_blank"
       [href]="href()"
       role="button"
-      class="w-40"
-      [class]="buttonClass()"
+      class="inline-flex w-40 cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 px-4 py-2 text-base font-semibold no-underline transition-colors [&_svg]:shrink-0"
+      [class]="variantClass()"
       [attr.aria-label]="ariaLabel()"
     >
       <ng-content />
@@ -19,9 +32,11 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   `,
 })
 export class ContactButtonComponent {
-  id = input.required<string>();
-  href = input.required<string>();
-  ariaLabel = input.required<string>();
-  buttonClass = input<string>('');
-  rel = input<string>('noopener');
+  readonly id = input.required<string>();
+  readonly href = input.required<string>();
+  readonly ariaLabel = input.required<string>();
+  readonly variant = input<ButtonVariant>('primary');
+  readonly rel = input<string>('noopener');
+
+  protected readonly variantClass = computed(() => VARIANT_CLASSES[this.variant()]);
 }

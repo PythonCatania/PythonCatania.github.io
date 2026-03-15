@@ -10,7 +10,7 @@
           rel="me noopener"
           href="https://t.me/pythoncatania"
           ariaLabel="Telegram"
-          buttonClass="border-[#2aabee] bg-[#2aabee] text-white hover:border-[#1d96d4] hover:bg-[#1d96d4]"
+          variant="telegram"
         >
           <app-icon-telegram />Telegram
         </app-contact-button>
@@ -22,7 +22,7 @@
           rel="me noopener"
           href="https://www.facebook.com/PythonCatania"
           ariaLabel="Facebook"
-          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
+          variant="secondary"
         >
           <app-icon-facebook />Facebook
         </app-contact-button>
@@ -31,7 +31,7 @@
           rel="me noopener"
           href="https://www.linkedin.com/groups/9895708/"
           ariaLabel="LinkedIn"
-          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
+          variant="secondary"
         >
           <app-icon-linkedin />LinkedIn
         </app-contact-button>
@@ -40,7 +40,7 @@
           rel="me noopener"
           href="https://www.youtube.com/@pythoncatania"
           ariaLabel="YouTube"
-          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
+          variant="secondary"
         >
           <app-icon-youtube />YouTube
         </app-contact-button>
@@ -49,7 +49,7 @@
           rel="me noopener"
           href="https://www.instagram.com/pythoncatania/"
           ariaLabel="Instagram"
-          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
+          variant="secondary"
         >
           <app-icon-instagram />Instagram
         </app-contact-button>
@@ -58,7 +58,7 @@
           rel="me noopener"
           href="https://social.python.it/@pycatania"
           ariaLabel="Mastodon"
-          buttonClass="border-secondary bg-secondary hover:border-secondary-hover hover:bg-secondary-hover text-white"
+          variant="secondary"
         >
           <app-icon-mastodon />Mastodon
         </app-contact-button>
@@ -68,12 +68,7 @@
     <!-- Column: Code + Networks + Partners -->
     <div class="flex flex-col gap-8">
       <app-contact-group title="Code">
-        <app-contact-button
-          id="github"
-          rel="me noopener"
-          href="https://github.com/PythonCatania"
-          ariaLabel="GitHub"
-        >
+        <app-contact-button id="github" rel="me noopener" href="https://github.com/PythonCatania" ariaLabel="GitHub">
           <app-icon-github />GitHub
         </app-contact-button>
       </app-contact-group>
@@ -83,7 +78,7 @@
           id="python-software-foundation"
           href="https://www.python.org/"
           ariaLabel="Python Software Foundation"
-          buttonClass="border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]"
+          variant="primary-outline"
         >
           <app-icon-psf /><abbr title="Python Software Foundation">PSF</abbr>
         </app-contact-button>
@@ -91,7 +86,7 @@
           id="python-italia"
           href="https://www.python.it/"
           ariaLabel="Python Italia"
-          buttonClass="border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]"
+          variant="primary-outline"
         >
           <app-icon-python-italia />Python&nbsp;Italia
         </app-contact-button>
@@ -102,7 +97,7 @@
           id="pycon-italia"
           href="https://www.pycon.it/"
           ariaLabel="PyCon Italia"
-          buttonClass="border-white bg-transparent text-white hover:border-white hover:bg-white/10"
+          variant="white-outline"
         >
           <app-icon-pycon-italia />PyCon&nbsp;Italia
         </app-contact-button>
@@ -113,7 +108,7 @@
           id="google-developer-group-catania"
           href="https://gdg.community.dev/gdg-catania/"
           ariaLabel="Google Developer Group Catania"
-          buttonClass="border-white bg-transparent text-white hover:border-white hover:bg-white/10"
+          variant="white-outline"
         >
           <app-icon-gdg /><abbr title="Google Developer Group">GDG</abbr>&nbsp;Catania
         </app-contact-button>

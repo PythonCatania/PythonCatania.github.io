@@ -48,6 +48,7 @@ Here is a link to the most recent Angular style guide https://angular.dev/style-
 - Do NOT use `ngStyle`, use `style` bindings instead, for context: https://angular.dev/guide/templates/binding#css-class-and-style-property-bindings
 - When you create a new component, create the related component.spec.ts file for unit tests
 - When you create a new service, create the related service.spec.ts file for unit tests
+- use readonly in all variables when it's possible
 
 ### State Management
 
