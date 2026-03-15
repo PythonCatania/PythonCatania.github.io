@@ -4,14 +4,32 @@
 @layer base {
   [role='button'],
   button {
-    @apply inline-flex items-center justify-center gap-2 px-4 py-2 border-2 border-(--color-primary) rounded-(--radius) text-base font-semibold no-underline cursor-pointer transition-colors bg-(--color-primary) text-white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition-property: color, background-color, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    background-color: var(--color-primary);
+    color: #fff;
 
     svg {
-      @apply shrink-0 fill-current;
+      flex-shrink: 0;
+      fill: currentColor;
     }
 
     &:hover {
-      @apply bg-(--color-primary-hover) border-(--color-primary-hover) text-white;
+      background-color: var(--color-primary-hover);
+      border-color: var(--color-primary-hover);
+      color: #fff;
     }
   }
 }
