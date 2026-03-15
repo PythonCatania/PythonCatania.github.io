@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "PyCatania",
+    "nextMeetup": "Prossimo Meetup",
+    "contacts": "Contatti",
+    "supporters": "Sostenitori",
+    "community": "Community",
+    "blog": "Blog",
+    "events": "Eventi",
+    "about": "Chi siamo"
+  },
+  "hero": {
+    "title": "Python Catania 🐘🌋",
+    "tagline": "Il posto giusto dove incontrare gli appassionati del linguaggio Python di Catania."
+  },
+  "nextMeetup": {
+    "title": "Prossimo Meetup",
+    "description": "Organizziamo incontri periodici per condividere conoscenza, esperienze e passione per Python. Chiunque sia curioso è il benvenuto, dal principiante all'esperto.",
+    "join": "Unisciti a noi"
+  },
+  "contact": {
+    "title": "Contatti",
+    "groups": {
+      "chat": "Chat",
+      "social": "Social",
+      "code": "Codice"
+    }
+  },
+  "supporters": {
+    "title": "Sostenitori",
+    "groups": {
+      "networks": "Reti",
+      "mediaPartners": "Media Partner",
+      "communityPartners": "Community Partner"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "readMore": "Leggi di più",
+    "noContent": "Nessun articolo disponibile."
+  },
+  "events": {
+    "title": "Eventi",
+    "past": "Eventi passati",
+    "noContent": "Nessun evento disponibile.",
+    "attendees": "partecipanti"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "description": "Il team che organizza e guida la community Python Catania.",
+    "role": "Organizzatore"
+  },
+  "callForSpeakers": {
+    "title": "Call for Speaker",
+    "description": "Hai un'idea, un progetto o un'esperienza da condividere? Salire sul palco è più semplice di quanto pensi. La nostra community accoglie talk di ogni livello: dal racconto di un side project personale fino ai deep dive tecnici.",
+    "cta": "Proponi un talk"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati"
+  }
+}

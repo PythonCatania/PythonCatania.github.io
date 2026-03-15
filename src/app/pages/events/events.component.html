@@ -1,0 +1,43 @@
+<section class="px-4 py-16">
+  <div class="mx-auto max-w-3xl">
+    <h1 class="mb-2 text-center text-3xl font-bold">{{ 'events.title' | transloco }}</h1>
+    <h2 class="mb-8 text-center text-xl text-(--color-muted)">{{ 'events.past' | transloco }}</h2>
+    @if (events().length === 0) {
+      <p class="text-center text-(--color-muted)">{{ 'events.noContent' | transloco }}</p>
+    }
+    <ul class="list-none p-0">
+      @for (event of events(); track event.id) {
+        <li class="mb-6 overflow-hidden rounded-(--radius) border border-(--border) bg-(--surface)">
+          <!-- Image banner behind title -->
+          <a [href]="event.url" target="_blank" rel="noopener" class="relative block no-underline">
+            @if (event.image) {
+              <div
+                class="h-40 bg-cover bg-center"
+                [style.background-image]="'url(' + event.image + ')'"
+                role="img"
+                [attr.aria-label]="event.title"
+              >
+                <div class="flex h-full items-end bg-gradient-to-t from-black/70 to-transparent p-4">
+                  <h3 class="text-lg font-semibold text-white">{{ event.title }}</h3>
+                </div>
+              </div>
+            } @else {
+              <div class="flex items-center bg-(--color-primary)/10 px-4 py-4">
+                <h3 class="text-lg font-semibold text-inherit hover:underline">{{ event.title }}</h3>
+              </div>
+            }
+          </a>
+          <div class="p-5">
+            <p class="mb-3 text-sm text-(--color-muted)">{{ event.date }}</p>
+            <p class="mb-3 text-(--color-muted)">
+              {{ activeLang() === 'en' ? event.descriptionEn : event.description }}
+            </p>
+            <span class="text-sm text-(--color-muted)"
+              >👥 {{ event.attendees }} {{ 'events.attendees' | transloco }}</span
+            >
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

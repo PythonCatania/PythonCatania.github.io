@@ -1,0 +1,24 @@
+<section class="px-4 py-16">
+  <div class="mx-auto max-w-3xl">
+    <h1 class="mb-8 text-center text-3xl font-bold">{{ 'blog.title' | transloco }}</h1>
+    @if (posts().length === 0) {
+      <p class="text-center text-(--color-muted)">{{ 'blog.noContent' | transloco }}</p>
+    }
+    <ul class="list-none p-0">
+      @for (post of posts(); track post.id) {
+        <li class="mb-8 rounded-(--radius) border border-(--border) bg-(--surface) p-6">
+          <p class="mb-1 text-sm text-(--color-muted)">{{ post.date }} · {{ post.author }}</p>
+          <h2 class="mb-2 text-xl font-semibold">{{ activeLang() === 'en' ? post.titleEn : post.title }}</h2>
+          <p class="mb-4 text-(--color-muted)">{{ activeLang() === 'en' ? post.contentEn : post.content }}</p>
+          <a
+            [href]="post.url"
+            target="_blank"
+            rel="noopener"
+            class="inline-flex items-center gap-1 text-(--color-primary) no-underline hover:underline"
+            >{{ 'blog.readMore' | transloco }} →</a
+          >
+        </li>
+      }
+    </ul>
+  </div>
+</section>

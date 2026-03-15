@@ -1,10 +1,21 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { HeaderComponent } from './header.component';
+import { TranslocoTestingModule } from '@jsverse/transloco';
 
 describe('HeaderComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent],
+      imports: [
+        TranslocoTestingModule.forRoot({
+          langs: {
+            it: { nav: { home: 'PyCatania', nextMeetup: 'Prossimo Meetup', contacts: 'Contatti', supporters: 'Sostenitori', community: 'Community', blog: 'Blog', events: 'Eventi', about: 'Chi siamo' } },
+            en: { nav: { home: 'PyCatania', nextMeetup: 'Next Meetup', contacts: 'Contacts', supporters: 'Supporters', community: 'Community', blog: 'Blog', events: 'Events', about: 'About us' } },
+          },
+          translocoConfig: { defaultLang: 'it' },
+        }),
+      ],
+      providers: [provideRouter([])],
     }).compileComponents();
   });
 
@@ -14,11 +25,16 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render nav links', async () => {
+  it('should default to italian language', () => {
     const fixture = TestBed.createComponent(HeaderComponent);
-    await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    const links = compiled.querySelectorAll('.nav-links a');
-    expect(links.length).toBe(3);
+    const component = fixture.componentInstance;
+    expect(component['activeLang']()).toBe('it');
+  });
+
+  it('should toggle language on button click', () => {
+    const fixture = TestBed.createComponent(HeaderComponent);
+    const component = fixture.componentInstance;
+    component['toggleLanguage']();
+    expect(component['activeLang']()).toBe('en');
   });
 });

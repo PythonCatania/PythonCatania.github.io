@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Python Catania #18 – AI & Machine Learning",
+    "date": "2024-11-14",
+    "image": "/images/events/event-18.jpg",
+    "description": "Una serata dedicata all'intelligenza artificiale e al machine learning con Python. Talk su LLM, fine-tuning e casi d'uso reali.",
+    "descriptionEn": "An evening dedicated to artificial intelligence and machine learning with Python. Talks on LLMs, fine-tuning and real use cases.",
+    "attendees": 45,
+    "url": "https://www.meetup.com/python-catania/events/past/"
+  },
+  {
+    "id": 2,
+    "title": "Python Catania #17 – Web Frameworks",
+    "date": "2024-09-19",
+    "image": "/images/events/event-17.jpg",
+    "description": "Confronto tra i principali framework web Python: Django, FastAPI e Flask. Casi d'uso, performance e quando scegliere l'uno o l'altro.",
+    "descriptionEn": "Comparison of the main Python web frameworks: Django, FastAPI and Flask. Use cases, performance and when to choose one over the other.",
+    "attendees": 38,
+    "url": "https://www.meetup.com/python-catania/events/past/"
+  },
+  {
+    "id": 3,
+    "title": "Python Catania #16 – Data Engineering",
+    "date": "2024-06-13",
+    "image": "/images/events/event-16.jpg",
+    "description": "Talk su pipeline di dati, Apache Airflow e Pandas. Come gestire grandi volumi di dati con Python in maniera efficiente.",
+    "descriptionEn": "Talks on data pipelines, Apache Airflow and Pandas. How to handle large volumes of data with Python efficiently.",
+    "attendees": 42,
+    "url": "https://www.meetup.com/python-catania/events/past/"
+  },
+  {
+    "id": 4,
+    "title": "Python Catania #15 – Testing & CI/CD",
+    "date": "2024-03-21",
+    "image": "/images/events/event-15.jpg",
+    "description": "Best practice per il testing in Python: pytest, mocking, coverage e integrazione con pipeline CI/CD su GitHub Actions.",
+    "descriptionEn": "Best practices for testing in Python: pytest, mocking, coverage and integration with CI/CD pipelines on GitHub Actions.",
+    "attendees": 35,
+    "url": "https://www.meetup.com/python-catania/events/past/"
+  },
+  {
+    "id": 5,
+    "title": "Python Catania #14 – Containerization",
+    "date": "2023-11-16",
+    "image": "/images/events/event-14.jpg",
+    "description": "Come containerizzare applicazioni Python con Docker e orchestrarle con Kubernetes. Demo pratiche e lessons learned.",
+    "descriptionEn": "How to containerise Python applications with Docker and orchestrate them with Kubernetes. Practical demos and lessons learned.",
+    "attendees": 40,
+    "url": "https://www.meetup.com/python-catania/events/past/"
+  },
+  {
+    "id": 6,
+    "title": "Python Catania #13 – Open Source Contributions",
+    "date": "2023-09-14",
+    "image": "/images/events/event-13.jpg",
+    "description": "Come contribuire a progetti open source in Python. Workflow con Git, come trovare issue adatte ai principianti e fare la prima pull request.",
+    "descriptionEn": "How to contribute to open source Python projects. Git workflow, how to find beginner-friendly issues and make your first pull request.",
+    "attendees": 30,
+    "url": "https://www.meetup.com/python-catania/events/past/"
+  }
+]

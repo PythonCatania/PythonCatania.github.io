@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Benvenuti nel blog di Python Catania",
+    "titleEn": "Welcome to the Python Catania blog",
+    "date": "2025-03-01",
+    "author": "Python Catania",
+    "content": "Siamo felici di annunciare il lancio del nostro nuovo blog dove condivideremo articoli tecnici, novità e aggiornamenti dalla community.",
+    "contentEn": "We are happy to announce the launch of our new blog where we will share technical articles, news and updates from the community.",
+    "url": "https://github.com/PythonCatania"
+  },
+  {
+    "id": 2,
+    "title": "Python 3.13: Le novità più importanti",
+    "titleEn": "Python 3.13: The most important new features",
+    "date": "2025-01-15",
+    "author": "Salvatore Rapisarda",
+    "content": "Una panoramica delle funzionalità più interessanti introdotte in Python 3.13, dal nuovo interprete interattivo ai miglioramenti del GIL.",
+    "contentEn": "An overview of the most interesting features introduced in Python 3.13, from the new interactive interpreter to GIL improvements.",
+    "url": "https://github.com/PythonCatania"
+  },
+  {
+    "id": 3,
+    "title": "FastAPI in produzione: consigli pratici",
+    "titleEn": "FastAPI in production: practical tips",
+    "date": "2024-11-20",
+    "author": "Matteo Jacopo Schembri",
+    "content": "Come strutturare e deployare un'applicazione FastAPI in produzione con Docker, e le best practice che abbiamo imparato sul campo.",
+    "contentEn": "How to structure and deploy a FastAPI application in production with Docker, and the best practices we have learned in the field.",
+    "url": "https://github.com/PythonCatania"
+  }
+]

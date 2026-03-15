@@ -1,0 +1,46 @@
+<section id="supporters" class="px-4 py-16 text-center">
+  <h2>{{ 'supporters.title' | transloco }}</h2>
+
+  <div class="mt-8 flex flex-wrap justify-center gap-12">
+    <app-contact-group [title]="'supporters.groups.networks' | transloco">
+      <app-contact-button
+        id="python-software-foundation"
+        href="https://www.python.org/"
+        ariaLabel="Python Software Foundation"
+        variant="primary-outline"
+      >
+        <app-icon-psf /><abbr title="Python Software Foundation">PSF</abbr>
+      </app-contact-button>
+      <app-contact-button
+        id="python-italia"
+        href="https://www.python.it/"
+        ariaLabel="Python Italia"
+        variant="primary-outline"
+      >
+        <app-icon-python-italia />Python&nbsp;Italia
+      </app-contact-button>
+    </app-contact-group>
+
+    <app-contact-group [title]="'supporters.groups.mediaPartners' | transloco">
+      <app-contact-button
+        id="pycon-italia"
+        href="https://www.pycon.it/"
+        ariaLabel="PyCon Italia"
+        variant="white-outline"
+      >
+        <app-icon-pycon-italia />PyCon&nbsp;Italia
+      </app-contact-button>
+    </app-contact-group>
+
+    <app-contact-group [title]="'supporters.groups.communityPartners' | transloco">
+      <app-contact-button
+        id="google-developer-group-catania"
+        href="https://gdg.community.dev/gdg-catania/"
+        ariaLabel="Google Developer Group Catania"
+        variant="white-outline"
+      >
+        <app-icon-gdg /><abbr title="Google Developer Group">GDG</abbr>&nbsp;Catania
+      </app-contact-button>
+    </app-contact-group>
+  </div>
+</section>
