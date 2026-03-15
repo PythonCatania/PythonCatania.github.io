@@ -34,6 +34,16 @@
         >
       </li>
 
+      <!-- Call for Speakers -->
+      <li class="flex list-none items-center">
+        <a
+          href="#call-for-speakers"
+          (click)="scrollTo($event, 'call-for-speakers')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.callForSpeakers' | transloco }}</a
+        >
+      </li>
+
       <!-- Contacts -->
       <li class="flex list-none items-center">
         <a
@@ -159,6 +169,14 @@
                 (click)="scrollTo($event, 'next-meetup')"
                 class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
                 >{{ 'nav.nextMeetup' | transloco }}</a
+              >
+            </li>
+            <li class="block">
+              <a
+                href="#call-for-speakers"
+                (click)="scrollTo($event, 'call-for-speakers')"
+                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                >{{ 'nav.callForSpeakers' | transloco }}</a
               >
             </li>
             <li class="block">
