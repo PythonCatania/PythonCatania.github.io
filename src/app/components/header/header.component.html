@@ -23,27 +23,6 @@
           >{{ 'nav.home' | transloco }}</a
         >
       </li>
-
-      <!-- Next Meetup -->
-      <li class="flex list-none items-center">
-        <a
-          href="#next-meetup"
-          (click)="scrollTo($event, 'next-meetup')"
-          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
-          >{{ 'nav.nextMeetup' | transloco }}</a
-        >
-      </li>
-
-      <!-- Call for Speakers -->
-      <li class="flex list-none items-center">
-        <a
-          href="#call-for-speakers"
-          (click)="scrollTo($event, 'call-for-speakers')"
-          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
-          >{{ 'nav.callForSpeakers' | transloco }}</a
-        >
-      </li>
-
       <!-- Contacts -->
       <li class="flex list-none items-center">
         <a
@@ -53,7 +32,6 @@
           >{{ 'nav.contacts' | transloco }}</a
         >
       </li>
-
       <!-- Supporters -->
       <li class="flex list-none items-center">
         <a
@@ -63,60 +41,85 @@
           >{{ 'nav.supporters' | transloco }}</a
         >
       </li>
+      <!-- Eventi -->
+      <li class="flex list-none items-center">
+        <a
+          routerLink="/events"
+          routerLinkActive="text-(--color-primary)"
+          (click)="closeDropdown($event)"
+          class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+          >{{ 'nav.events' | transloco }}</a
+        >
+      </li>
+
+      <!-- Chi siamo -->
+      <li class="flex list-none items-center">
+        <a
+          routerLink="/chi-siamo"
+          routerLinkActive="text-(--color-primary)"
+          (click)="closeDropdown($event)"
+          class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+          >{{ 'nav.about' | transloco }}</a
+        >
+      </li>
+
+      <!-- Next Meetup -->
+      <!-- <li class="flex list-none items-center">
+        <a
+          href="#next-meetup"
+          (click)="scrollTo($event, 'next-meetup')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.nextMeetup' | transloco }}</a
+        >
+      </li> -->
+
+      <!-- Call for Speakers -->
+      <!-- <li class="flex list-none items-center">
+        <a
+          href="#call-for-speakers"
+          (click)="scrollTo($event, 'call-for-speakers')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.callForSpeakers' | transloco }}</a
+        >
+      </li> -->
 
       <!-- Community dropdown -->
-      <li class="relative flex list-none items-center">
-        <details class="group">
-          <summary
-            class="flex cursor-pointer list-none items-center gap-1 rounded-(--radius) px-3 py-[0.4rem] text-inherit transition-colors duration-150 hover:bg-(--surface) [&::-webkit-details-marker]:hidden"
-          >
-            {{ 'nav.community' | transloco }}
-            <svg
-              class="h-3 w-3 transition-transform group-open:rotate-180"
-              viewBox="0 0 10 6"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              aria-hidden="true"
+      @if (debugService.isEnabled) {
+        <li class="relative flex list-none items-center">
+          <details class="group">
+            <summary
+              class="flex cursor-pointer list-none items-center gap-1 rounded-(--radius) px-3 py-[0.4rem] text-inherit transition-colors duration-150 hover:bg-(--surface) [&::-webkit-details-marker]:hidden"
             >
-              <path d="M1 1l4 4 4-4" />
-            </svg>
-          </summary>
-          <ul
-            class="absolute top-[calc(100%+0.25rem)] left-0 z-10 m-0 min-w-40 list-none rounded-(--radius) border border-(--border) bg-(--bg) p-1 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
-          >
-            <li class="block">
-              <a
-                routerLink="/chi-siamo"
-                routerLinkActive="text-(--color-primary)"
-                (click)="closeDropdown($event)"
-                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
-                >{{ 'nav.about' | transloco }}</a
+              {{ 'nav.community' | transloco }}
+              <svg
+                class="h-3 w-3 transition-transform group-open:rotate-180"
+                viewBox="0 0 10 6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                aria-hidden="true"
               >
-            </li>
-            @if (debugService.isEnabled) {
-              <li class="block">
-                <a
-                  routerLink="/blog"
-                  routerLinkActive="text-(--color-primary)"
-                  (click)="closeDropdown($event)"
-                  class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
-                  >{{ 'nav.blog' | transloco }}</a
-                >
-              </li>
-            }
-            <li class="block">
-              <a
-                routerLink="/events"
-                routerLinkActive="text-(--color-primary)"
-                (click)="closeDropdown($event)"
-                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
-                >{{ 'nav.events' | transloco }}</a
-              >
-            </li>
-          </ul>
-        </details>
-      </li>
+                <path d="M1 1l4 4 4-4" />
+              </svg>
+            </summary>
+            <ul
+              class="absolute top-[calc(100%+0.25rem)] left-0 z-10 m-0 min-w-40 list-none rounded-(--radius) border border-(--border) bg-(--bg) p-1 shadow-[0_4px_16px_rgba(0,0,0,0.15)]"
+            >
+              @if (debugService.isEnabled) {
+                <li class="block">
+                  <a
+                    routerLink="/blog"
+                    routerLinkActive="text-(--color-primary)"
+                    (click)="closeDropdown($event)"
+                    class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
+                    >{{ 'nav.blog' | transloco }}</a
+                  >
+                </li>
+              }
+            </ul>
+          </details>
+        </li>
+      }
     </ul>
 
     <!-- Language toggle (desktop) -->
