@@ -1,3 +1,5 @@
+<img src="/images/pythoncatania.svg" alt="Python Catania" style="min-height: 250px" />
+
 # Code of Conduct
 
 ## Who we are
