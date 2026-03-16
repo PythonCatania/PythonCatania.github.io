@@ -1,3 +1,5 @@
+<img src="/images/pythoncatania.svg" alt="Python Catania" style="min-height: 250px" />
+
 # Codice di Condotta
 
 ## Chi siamo
