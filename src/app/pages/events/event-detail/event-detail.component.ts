@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
+import { NgOptimizedImage } from '@angular/common';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -7,6 +8,7 @@ import { BASE_URL } from '../../../app.config';
 
 interface Speaker {
   readonly name: string;
+  readonly image?: string;
   readonly topic: string;
   readonly topicEn: string;
 }
@@ -28,7 +30,7 @@ interface MeetupEvent {
 
 @Component({
   selector: 'app-event-detail',
-  imports: [TranslocoModule, RouterLink],
+  imports: [TranslocoModule, RouterLink, NgOptimizedImage],
   templateUrl: './event-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

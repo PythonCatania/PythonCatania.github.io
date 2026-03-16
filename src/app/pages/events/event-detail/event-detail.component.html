@@ -38,11 +38,21 @@
               <li
                 class="mb-3 flex items-start gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-4"
               >
-                <div
-                  class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-(--color-primary)/15 text-lg font-bold text-(--color-primary)"
-                >
-                  {{ speaker.name.charAt(0) }}
-                </div>
+                @if (speaker.image) {
+                  <img
+                    [ngSrc]="speaker.image"
+                    width="40"
+                    height="40"
+                    [alt]="speaker.name"
+                    class="h-10 w-10 shrink-0 rounded-full object-cover"
+                  />
+                } @else {
+                  <div
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-(--color-primary)/15 text-lg font-bold text-(--color-primary)"
+                  >
+                    {{ speaker.name.charAt(0) }}
+                  </div>
+                }
                 <div>
                   <p class="font-medium">{{ speaker.name }}</p>
                   <p class="text-sm text-(--color-muted)">
