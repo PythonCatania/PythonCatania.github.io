@@ -38,6 +38,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/team/team.component').then((module) => module.TeamComponent),
   },
   {
+    path: 'coc',
+    loadComponent: () => import('./pages/coc/coc.component').then((module) => module.CocComponent),
+  },
+  {
     path: '**',
     redirectTo: '',
   },
