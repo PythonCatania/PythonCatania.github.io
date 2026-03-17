@@ -282,7 +282,11 @@
     "fullDescriptionEn": "The last meetup of 2024 was held at CreationDose with a Christmas theme: latest Python news, expert talks, gift exchange, toast and a final PyDinner. A perfect way to bid farewell to the year together with the community.",
     "attendees": 44,
     "url": "https://www.meetup.com/python-catania/events/304691223/",
-    "videos": ["c8URuoByeRY", "AavetGgMq40", "Kkd2cmjGub0?start=829"],
+    "videos": [
+      { "id": "AavetGgMq40", "title": "PyCT - Meetup 06 Dicembre 2024 - Intro alla community Python Catania" },
+      { "id": "c8URuoByeRY", "title": "PyCT - Meetup 06 Dicembre 2024 - GUI desktop application development (with PySide6)" },
+      { "id": "Kkd2cmjGub0?start=829", "title": "PyCT - Meetup 06 Dicembre 2024 - PyDivertimento (AoC e SpeechLess)" }
+    ],
     "gallery": ["/images/events/event-304691223.jpg"],
     "speakers": [
       {
@@ -316,7 +320,12 @@
     "fullDescriptionEn": "Summer Edition 2024 was held at Paradigma SpA with the goal of sharing the latest Python news, listening to community expert talks and networking. The evening ended with a PyPizza together.",
     "attendees": 32,
     "url": "https://www.meetup.com/python-catania/events/302671524/",
-    "videos": ["1HksMsb9Xho", "m0lCULOKqTc", "ymCyuHgP6h4", "yD2zhMWeJBM?start=1547"],
+    "videos": [
+      { "id": "m0lCULOKqTc", "title": "Introduzione al Python Catania Meetup del 30/08/2024" },
+      { "id": "1HksMsb9Xho", "title": "Python Catania Meetup 30/08/24 - Introduzione a Odoo by Salvo Rapisarda" },
+      { "id": "ymCyuHgP6h4", "title": "Python Catania Meetup 30/08/24 - PyScript by Pietro Peterlongo" },
+      { "id": "yD2zhMWeJBM?start=1547", "title": "Python Catania Meetup 30/08/24 - Micropython by Salvatore Sanfilippo" }
+    ],
     "gallery": ["/images/events/event-302671524.jpg"],
     "speakers": [
       {

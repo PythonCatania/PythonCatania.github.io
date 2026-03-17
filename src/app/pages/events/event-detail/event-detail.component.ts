@@ -28,7 +28,7 @@ interface MeetupEvent {
   readonly fullDescriptionEn: string;
   readonly attendees: number;
   readonly url: string;
-  readonly videos?: string[];
+  readonly videos?: { id: string; title: string }[];
   readonly gallery: string[];
   readonly speakers: Speaker[];
 }
@@ -65,7 +65,9 @@ export class EventDetailComponent {
 
   protected videoWatchUrl(videoId: string): string {
     const [id, params] = videoId.split('?');
-    return params ? `https://www.youtube.com/watch?v=${id}&${params}` : `https://www.youtube.com/watch?v=${id}`;
+    return params
+      ? `https://www.youtube.com/watch?v=${id}&${params}`
+      : `https://www.youtube.com/watch?v=${id}`;
   }
 
   protected openLightbox(index: number): void {
