@@ -83,7 +83,12 @@
       "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550631795772_75742876461.jpg",
       "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550648536342_75742876461.jpg",
       "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550816328124_75742876461.jpg",
-      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550858256139_75742876461.jpg"
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550858256139_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/photo_2026-03-17_21-39-31.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/photo_2026-03-17_21-39-33.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/photo_2026-03-17_21-39-39.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/photo_2026-03-17_21-39-40.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/photo_2026-03-17_21-39-42.jpg"
     ],
     "speakers": [
       {
@@ -91,6 +96,18 @@
         "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
         "topicEn": "Sharing the latest news about the Python language.",
         "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Matteo Jacopo Schembri",
+        "topic": "",
+        "topicEn": "",
+        "image": "/images/about/MatteoJacopoSchembri.jpeg"
+      },
+      {
+        "name": "Stefano Borzì",
+        "topic": "Python multithreading",
+        "topicEn": "Python multithreading",
+        "image": "/images/about/StefanoBorzi.jpeg"
       }
     ]
   },
@@ -137,6 +154,18 @@
         "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
         "topicEn": "Sharing the latest news about the Python language.",
         "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Matteo Jacopo Schembri",
+        "topic": "Garbage collection in Python",
+        "topicEn": "Garbage collection in Python",
+        "image": "/images/about/MatteoJacopoSchembri.jpeg"
+      },
+      {
+        "name": "Stefano Borzì",
+        "topic": "Python extendibility",
+        "topicEn": "Python extendibility",
+        "image": "/images/about/StefanoBorzi.jpeg"
       }
     ]
   },
