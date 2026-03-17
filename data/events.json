@@ -263,6 +263,7 @@
     "fullDescriptionEn": "The last meetup of 2024 was held at CreationDose with a Christmas theme: latest Python news, expert talks, gift exchange, toast and a final PyDinner. A perfect way to bid farewell to the year together with the community.",
     "attendees": 44,
     "url": "https://www.meetup.com/python-catania/events/304691223/",
+    "videos": ["c8URuoByeRY", "AavetGgMq40", "Kkd2cmjGub0?start=829"],
     "gallery": ["/images/events/event-304691223.jpg"],
     "speakers": [
       {
@@ -284,13 +285,26 @@
     "fullDescriptionEn": "Summer Edition 2024 was held at Paradigma SpA with the goal of sharing the latest Python news, listening to community expert talks and networking. The evening ended with a PyPizza together.",
     "attendees": 32,
     "url": "https://www.meetup.com/python-catania/events/302671524/",
+    "videos": ["1HksMsb9Xho", "m0lCULOKqTc", "ymCyuHgP6h4", "yD2zhMWeJBM?start=1547"],
     "gallery": ["/images/events/event-302671524.jpg"],
     "speakers": [
       {
         "name": "Salvatore Rapisarda",
-        "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
-        "topicEn": "Sharing the latest news about the Python language.",
+        "topic": "Introduzione a ODOO",
+        "topicEn": "Introduction to ODOO",
         "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Salvatore Sanfilippo",
+        "topic": "Micropython",
+        "topicEn": "Micropython",
+        "image": "/images/events-speakers/SalvatoreSanfilippo.jpeg"
+      },
+      {
+        "name": "Pietro Peterlongo",
+        "topic": "PyScript",
+        "topicEn": "PyScript",
+        "image": "/images/events-speakers/PietroPeterlongo.jpeg"
       }
     ]
   },
