@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
@@ -25,6 +26,7 @@ interface MeetupEvent {
   readonly fullDescriptionEn: string;
   readonly attendees: number;
   readonly url: string;
+  readonly videos?: string[];
   readonly gallery: string[];
   readonly speakers: Speaker[];
 }
@@ -38,6 +40,7 @@ interface MeetupEvent {
 export class EventDetailComponent {
   private readonly http = inject(HttpClient);
   private readonly route = inject(ActivatedRoute);
+  private readonly sanitizer = inject(DomSanitizer);
   private readonly translocoService = inject(TranslocoService);
   protected readonly baseUrl = inject(BASE_URL);
 
@@ -53,6 +56,12 @@ export class EventDetailComponent {
       const found = events.find((event) => event.id === id) ?? null;
       this.event.set(found);
     });
+  }
+
+  protected embedUrl(videoId: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(
+      `https://www.youtube.com/embed/${videoId}`
+    );
   }
 
   protected openLightbox(index: number): void {

@@ -35,9 +35,7 @@
           <h2 class="mb-4 text-xl font-semibold">{{ 'events.speakers' | transloco }}</h2>
           <ul class="grid list-none grid-cols-1 gap-3 p-0 sm:grid-cols-2">
             @for (speaker of event()!.speakers; track speaker.name) {
-              <li
-                class="flex items-start gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-4"
-              >
+              <li class="flex items-start gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-4">
                 @if (speaker.image) {
                   <img
                     [ngSrc]="speaker.image"
@@ -62,6 +60,26 @@
               </li>
             }
           </ul>
+        </div>
+      }
+
+      <!-- Videos -->
+      @if (event()!.videos && event()!.videos!.length > 0) {
+        <div class="mb-10">
+          <h2 class="mb-4 text-xl font-semibold">{{ 'events.videos' | transloco }}</h2>
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            @for (videoId of event()!.videos!; track videoId) {
+              <div class="aspect-video w-full overflow-hidden rounded-(--radius) shadow">
+                <iframe
+                  [src]="embedUrl(videoId)"
+                  class="h-full w-full"
+                  allowfullscreen
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  title="Video"
+                ></iframe>
+              </div>
+            }
+          </div>
         </div>
       }
 
