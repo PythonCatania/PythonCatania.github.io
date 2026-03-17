@@ -3,14 +3,26 @@
     "id": 313050179,
     "title": "Meetup Python Catania - Python Coding Festival 🎶",
     "date": "2026-02-27",
-    "image": "/images/events/event-313050179.jpg",
+    "image": "/images/events/27-02-2026/event-313050179.jpg",
     "description": "La community di Python Catania si incontra per il primo meetup del 2026 con un talk su Python e Digital Humanities, le novità di PyCon Italia 2026 e tanto networking.",
     "descriptionEn": "The Python Catania community meets for the first 2026 meetup with a talk on Python and Digital Humanities, PyCon Italia 2026 news and plenty of networking.",
     "fullDescription": "Il primo meetup del 2026 porta sul palco un tema insolito e affascinante: Python applicato alle scienze umanistiche. Tre studentesse di Scienze del Testo Digitale dell'UniCT racconteranno come le tecniche di programmazione Python vengono utilizzate nella ricerca umanistica. Spazio anche alle novità di PyCon Italia 2026 e, come di consueto, a un momento di networking e al PyDinner a chiusura della serata.",
     "fullDescriptionEn": "The first meetup of 2026 brings an unusual and fascinating topic to the stage: Python applied to the humanities. Three students from the Digital Text Sciences programme at UniCT will explain how Python programming techniques are used in humanities research. There will also be updates on PyCon Italia 2026 and, as usual, a networking moment and PyDinner to close the evening.",
     "attendees": 23,
     "url": "https://www.meetup.com/python-catania/events/313050179/",
-    "gallery": ["/images/events/event-313050179.jpg"],
+    "gallery": [
+      "/images/events/27-02-2026/event-313050179.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842039993544377513_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040011428888437_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040034615010639_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040048900787860_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040063907989033_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040072019834333_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040087203193701_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040108225022343_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226964_3842040161970873239_75742876461.jpg",
+      "/images/events/27-02-2026/pythoncatania_1772226965_3842040136737911444_75742876461.jpg"
+    ],
     "speakers": [
       {
         "name": "Salvatore Rapisarda",
@@ -19,9 +31,34 @@
         "image": "/images/about/SalvoRapisarda.jpeg"
       },
       {
-        "name": "Andrea, Flavia e Cristina",
+        "name": "Andrea Modica",
         "topic": "Python & Digital Humanities",
-        "topicEn": "Python & Digital Humanities"
+        "topicEn": "Python & Digital Humanities",
+        "image": "/images/events-speakers/AndreaModica.jpg"
+      },
+      {
+        "name": "Flavia",
+        "topic": "Python & Digital Humanities",
+        "topicEn": "Python & Digital Humanities",
+        "image": "/images/events-speakers/Flavia.jpg"
+      },
+      {
+        "name": "Cristina Raciti",
+        "topic": "Python & Digital Humanities",
+        "topicEn": "Python & Digital Humanities",
+        "image": "/images/events-speakers/CristinaRaciti.jpg"
+      },
+      {
+        "name": "Dario Camonita",
+        "topic": "Distributed Systems and Big Data (DSBD) Project",
+        "topicEn": "Distributed Systems and Big Data (DSBD) Project",
+        "image": "/images/events-speakers/DarioCamonita.jpeg"
+      },
+      {
+        "name": "Matteo Jacopo Schembri",
+        "topic": "Distributed Systems and Big Data (DSBD) Project",
+        "topicEn": "Distributed Systems and Big Data (DSBD) Project",
+        "image": "/images/about/MatteoJacopoSchembri.jpeg"
       }
     ]
   },
@@ -29,14 +66,25 @@
     "id": 312066711,
     "title": "Meetup Python Catania - Ho! Ho! Python Code! 🎅🎄",
     "date": "2025-12-09",
-    "image": "/images/events/event-312066711.jpg",
+    "image": "/images/events/09-12-2025-oh-oh-oh/event-312066711.jpg",
     "description": "Edizione natalizia speciale della community Python Catania: presentazione agli studenti universitari, ultime novità Python e PyDinner finale.",
     "descriptionEn": "A special Christmas edition of the Python Catania community: presentation to university students, latest Python news and a PyDinner finale.",
     "fullDescription": "L'edizione natalizia 2025 si è tenuta al Dipartimento di Matematica e Informatica dell'UniCT, un'occasione speciale per presentare la community Python Catania e Python Italia agli studenti universitari. La serata ha incluso aggiornamenti sulle ultime novità del linguaggio Python, spazio alla creatività e domande, e si è conclusa con il consueto PyDinner.",
     "fullDescriptionEn": "The Christmas 2025 edition was held at the Department of Mathematics and Informatics at UniCT — a special occasion to introduce the Python Catania and Python Italia communities to university students. The evening included updates on the latest Python language news, space for creativity and Q&A, and concluded with the usual PyDinner.",
     "attendees": 27,
     "url": "https://www.meetup.com/python-catania/events/312066711/",
-    "gallery": ["/images/events/event-312066711.jpg"],
+    "gallery": [
+      "/images/events/09-12-2025-oh-oh-oh/event-312066711.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564338_3786150550413697857_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564338_3786150550422086028_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564338_3786150550556253496_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550514324623_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550573049610_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550631795772_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550648536342_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550816328124_75742876461.jpg",
+      "/images/events/09-12-2025-oh-oh-oh/pythoncatania_1765564339_3786150550858256139_75742876461.jpg"
+    ],
     "speakers": [
       {
         "name": "Salvatore Rapisarda",
