@@ -70,14 +70,15 @@
         <div class="mb-10">
           <h2 class="mb-4 text-xl font-semibold">{{ 'events.gallery' | transloco }}</h2>
           <ul class="grid list-none grid-cols-2 gap-3 p-0 sm:grid-cols-3">
-            @for (image of event()!.gallery; track image) {
+            @for (image of event()!.gallery; track image; let index = $index) {
               <li>
-                <div
-                  class="h-40 rounded-(--radius) bg-cover bg-center"
+                <button
+                  type="button"
+                  class="h-40 w-full cursor-pointer rounded-(--radius) bg-cover bg-center transition-opacity hover:opacity-80"
                   [style.background-image]="'url(' + baseUrl + image + ')'"
-                  role="img"
-                  [attr.aria-label]="event()!.title"
-                ></div>
+                  [attr.aria-label]="event()!.title + ' - photo ' + (index + 1)"
+                  (click)="openLightbox(index)"
+                ></button>
               </li>
             }
           </ul>
@@ -97,3 +98,7 @@
     }
   </div>
 </section>
+
+@if (event()) {
+  <app-lightbox [images]="event()!.gallery" [baseUrl]="baseUrl" [(index)]="lightboxIndex" />
+}

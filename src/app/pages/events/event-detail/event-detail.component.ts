@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { BASE_URL } from '../../../app.config';
+import { LightboxComponent } from '../../../components/shared/lightbox/lightbox.component';
 
 interface Speaker {
   readonly name: string;
@@ -30,7 +31,7 @@ interface MeetupEvent {
 
 @Component({
   selector: 'app-event-detail',
-  imports: [TranslocoModule, RouterLink, NgOptimizedImage],
+  imports: [TranslocoModule, RouterLink, NgOptimizedImage, LightboxComponent],
   templateUrl: './event-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -41,6 +42,7 @@ export class EventDetailComponent {
   protected readonly baseUrl = inject(BASE_URL);
 
   protected readonly event = signal<MeetupEvent | null>(null);
+  protected readonly lightboxIndex = signal<number | null>(null);
   protected readonly activeLang = toSignal(this.translocoService.langChanges$, {
     initialValue: this.translocoService.getActiveLang(),
   });
@@ -51,5 +53,9 @@ export class EventDetailComponent {
       const found = events.find((event) => event.id === id) ?? null;
       this.event.set(found);
     });
+  }
+
+  protected openLightbox(index: number): void {
+    this.lightboxIndex.set(index);
   }
 }
