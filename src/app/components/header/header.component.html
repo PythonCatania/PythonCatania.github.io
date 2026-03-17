@@ -23,6 +23,15 @@
           >{{ 'nav.home' | transloco }}</a
         >
       </li>
+      <!-- Call for Speakers -->
+      <li class="flex list-none items-center">
+        <a
+          href="#call-for-speakers"
+          (click)="scrollTo($event, 'call-for-speakers')"
+          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
+          >{{ 'nav.callForSpeakers' | transloco }}</a
+        >
+      </li>
       <!-- Contacts -->
       <li class="flex list-none items-center">
         <a
@@ -30,15 +39,6 @@
           (click)="scrollTo($event, 'contact')"
           class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
           >{{ 'nav.contacts' | transloco }}</a
-        >
-      </li>
-      <!-- Supporters -->
-      <li class="flex list-none items-center">
-        <a
-          href="#supporters"
-          (click)="scrollTo($event, 'supporters')"
-          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
-          >{{ 'nav.supporters' | transloco }}</a
         >
       </li>
       <!-- Eventi -->
@@ -63,25 +63,6 @@
         >
       </li>
 
-      <!-- Next Meetup -->
-      <!-- <li class="flex list-none items-center">
-        <a
-          href="#next-meetup"
-          (click)="scrollTo($event, 'next-meetup')"
-          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
-          >{{ 'nav.nextMeetup' | transloco }}</a
-        >
-      </li> -->
-
-      <!-- Call for Speakers -->
-      <!-- <li class="flex list-none items-center">
-        <a
-          href="#call-for-speakers"
-          (click)="scrollTo($event, 'call-for-speakers')"
-          class="rounded-(--radius) px-3 py-[0.4rem] text-inherit no-underline transition-colors duration-150 hover:bg-(--surface)"
-          >{{ 'nav.callForSpeakers' | transloco }}</a
-        >
-      </li> -->
 
       <!-- Community dropdown -->
       @if (debugService.isEnabled) {
@@ -195,14 +176,7 @@
                 >{{ 'nav.contacts' | transloco }}</a
               >
             </li>
-            <li class="block">
-              <a
-                href="#supporters"
-                (click)="scrollTo($event, 'supporters')"
-                class="block rounded-[calc(var(--radius)-2px)] px-3 py-2 text-inherit no-underline hover:bg-(--surface)"
-                >{{ 'nav.supporters' | transloco }}</a
-              >
-            </li>
+
             <li class="mt-1 block border-t border-(--border) pt-1">
               <p class="px-3 py-1 text-xs tracking-wide text-(--color-muted) uppercase">
                 {{ 'nav.community' | transloco }}

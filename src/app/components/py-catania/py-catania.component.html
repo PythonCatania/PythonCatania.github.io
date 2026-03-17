@@ -1,16 +1,23 @@
-<section id="pycatania" class="px-4 py-16 text-center">
-  <div>
-    <img
-      ngSrc="/images/pythoncatania.svg"
-      alt="Python Catania logo"
-      height="192"
-      width="192"
-      priority
-      class="mx-auto mb-4 block"
-    />
+<section id="pycatania" class="px-4">
+  <div class="mx-auto flex max-w-5xl flex-col items-center gap-10 md:flex-row">
+    <div class="w-full md:w-1/2">
+      <img
+        ngSrc="/images/homepage/PyCatania-intro.jpg"
+        alt="Python Catania intro"
+        width="1440"
+        height="1440"
+        priority
+        class="w-full rounded-(--radius) object-cover shadow-lg"
+      />
+    </div>
+    <div class="flex w-full flex-col items-center gap-4 text-center md:w-1/2 md:items-start md:text-left">
+      <div class="py-16">
+        <img ngSrc="/images/pythoncatania.svg" alt="Python Catania logo" height="96" width="96" />
+        <hgroup>
+          <h1>{{ 'hero.title' | transloco }}</h1>
+          <p>{{ 'hero.tagline' | transloco }}</p>
+        </hgroup>
+      </div>
+    </div>
   </div>
-  <hgroup>
-    <h1>{{ 'hero.title' | transloco }}</h1>
-    <p class="mx-auto max-w-[40rem]">{{ 'hero.tagline' | transloco }}</p>
-  </hgroup>
 </section>

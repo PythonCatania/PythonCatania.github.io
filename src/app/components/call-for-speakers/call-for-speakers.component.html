@@ -1,15 +1,30 @@
-<section id="call-for-speakers" class="px-4 py-16 text-center">
-  <h2>{{ 'callForSpeakers.title' | transloco }}</h2>
-  <p class="mx-auto mb-8 max-w-xl">{{ 'callForSpeakers.description' | transloco }}</p>
-  <a
-    id="call-for-speakers-link"
-    href="https://github.com/PythonCatania/PythonCatania.github.io/issues/new?title=Talk+Proposal&labels=talk"
-    target="_blank"
-    rel="noopener"
-    role="button"
-    aria-label="Proponi un talk"
-    class="inline-flex cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 border-(--color-primary) bg-(--color-primary) px-6 py-2 text-base font-semibold text-white no-underline transition-colors hover:border-(--color-primary-hover) hover:bg-(--color-primary-hover) hover:text-white"
-  >
-    {{ 'callForSpeakers.cta' | transloco }}
-  </a>
+<section id="call-for-speakers" class="px-4">
+  <div class="mx-auto flex max-w-5xl flex-col items-center gap-10 md:flex-row">
+    <div class="w-full md:w-1/2">
+      <img
+        ngSrc="/images/homepage/CallForSpeaker.jpeg"
+        alt="Call for Speakers"
+        width="1440"
+        height="1440"
+        class="w-full rounded-(--radius) object-cover shadow-lg"
+      />
+    </div>
+    <div class="flex w-full flex-col items-center gap-4 text-center md:w-1/2 md:items-start md:text-left">
+      <div class="py-16">
+        <h2>{{ 'callForSpeakers.title' | transloco }}</h2>
+        <p class="mb-8">{{ 'callForSpeakers.description' | transloco }}</p>
+        <a
+          id="call-for-speakers-link"
+          href="https://github.com/PythonCatania/PythonCatania.github.io/issues/new?title=Talk+Proposal&labels=talk"
+          target="_blank"
+          rel="noopener"
+          role="button"
+          aria-label="Proponi un talk"
+          class="inline-flex cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 border-(--color-primary) bg-(--color-primary) px-6 py-2 text-base font-semibold text-white no-underline transition-colors hover:border-(--color-primary-hover) hover:bg-(--color-primary-hover) hover:text-white"
+        >
+          {{ 'callForSpeakers.cta' | transloco }}
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
