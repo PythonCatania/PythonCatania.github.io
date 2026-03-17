@@ -207,14 +207,21 @@
     "id": 307712208,
     "title": "Meetup Python Catania - Get ready for PyCon Italia 2025!",
     "date": "2025-05-16",
-    "image": "/images/events/event-307712208.jpg",
+    "image": "/images/events/16-05-2025/event-307712208.jpg",
     "description": "Il PyCon Italia 2025 è vicinissimo ed è il momento giusto per incontrare la community di Python Catania e condividere del buon codice sorgente.",
     "descriptionEn": "PyCon Italia 2025 is just around the corner — the perfect moment to meet the Python Catania community and share great source code.",
     "fullDescription": "Manca poco al PyCon Italia 2025 e questo meetup è stato dedicato alla preparazione: ultime novità del linguaggio Python, talk degli esperti della community e spazio per chi vuole proporre il proprio contributo. La serata si è conclusa con il consueto PyDinner.",
     "fullDescriptionEn": "PyCon Italia 2025 is just around the corner and this meetup was dedicated to preparation: latest Python language news, community expert talks and space for anyone who wants to contribute. The evening ended with the usual PyDinner.",
     "attendees": 40,
     "url": "https://www.meetup.com/python-catania/events/307712208/",
-    "gallery": ["/images/events/event-307712208.jpg"],
+    "gallery": [
+      "/images/events/16-05-2025/event-307712208.jpg",
+      "/images/events/16-05-2025/pythoncatania_1752438412_3676042301466513150_75742876461.jpg",
+      "/images/events/16-05-2025/pythoncatania_1752438412_3676042301474905789_75742876461.jpg",
+      "/images/events/16-05-2025/pythoncatania_1752438412_3676042301474943381_75742876461.jpg",
+      "/images/events/16-05-2025/pythoncatania_1752438412_3676042301483356487_75742876461.jpg",
+      "/images/events/16-05-2025/pythoncatania_1752438412_3676042301634380568_75742876461.jpg"
+    ],
     "speakers": [
       {
         "name": "Salvatore Rapisarda",
