@@ -2,7 +2,7 @@
   <div class="mx-auto max-w-4xl">
     <h1 class="mb-4 text-center text-3xl font-bold">{{ 'about.title' | transloco }}</h1>
     <p class="mb-10 text-center text-(--color-muted)">{{ 'about.description' | transloco }}</p>
-    <ul class="grid list-none grid-cols-2 gap-8 p-0">
+    <ul class="grid list-none grid-cols-1 gap-8 p-0 sm:grid-cols-2">
       @for (member of members; track member.name) {
         <li
           class="flex flex-col items-center gap-4 rounded-(--radius) border border-(--border) bg-(--surface) p-8 text-center"
@@ -17,7 +17,7 @@
           <div>
             <p class="text-lg font-semibold">{{ member.name }}</p>
             <p class="mt-1 text-(--color-muted)">{{ 'about.role' | transloco }}</p>
-            <div class="mt-3 flex justify-center gap-3">
+            <div class="mt-3 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
               @if (member.github) {
                 <a
                   [href]="member.github"
