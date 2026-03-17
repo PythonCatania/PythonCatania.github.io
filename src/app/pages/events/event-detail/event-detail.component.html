@@ -69,15 +69,25 @@
           <h2 class="mb-4 text-xl font-semibold">{{ 'events.videos' | transloco }}</h2>
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
             @for (videoId of event()!.videos!; track videoId) {
-              <div class="aspect-video w-full overflow-hidden rounded-(--radius) shadow">
-                <iframe
-                  [src]="embedUrl(videoId)"
-                  class="h-full w-full"
-                  allowfullscreen
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  title="Video"
-                ></iframe>
-              </div>
+              <a
+                [href]="videoWatchUrl(videoId)"
+                target="_blank"
+                rel="noopener"
+                class="group relative block aspect-video w-full overflow-hidden rounded-(--radius) shadow"
+              >
+                <img
+                  [src]="videoThumbnail(videoId)"
+                  alt="Video thumbnail"
+                  class="h-full w-full object-cover transition-opacity group-hover:opacity-80"
+                />
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="flex h-14 w-14 items-center justify-center rounded-full bg-black/60 text-white transition-colors group-hover:bg-black/80">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7 translate-x-0.5" aria-hidden="true">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                </div>
+              </a>
             }
           </div>
         </div>

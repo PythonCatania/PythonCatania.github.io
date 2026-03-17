@@ -271,6 +271,18 @@
         "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
         "topicEn": "Sharing the latest news about the Python language.",
         "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Dario Camonita",
+        "topic": "GUI desktop application development (with PySide6)",
+        "topicEn": "GUI desktop application development (with PySide6)",
+        "image": "/images/events-speakers/DarioCamonita.jpeg"
+      },
+      {
+        "name": "Raffaele Barone",
+        "topic": "PyDivertimento (AoC & SpeechLess)",
+        "topicEn": "PyDivertimento (AoC & SpeechLess)",
+        "image": "/images/events-speakers/RaffaeleBarone.jpeg"
       }
     ]
   },
