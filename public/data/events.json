@@ -52,13 +52,15 @@
         "name": "Dario Camonita",
         "topic": "Distributed Systems and Big Data (DSBD) Project",
         "topicEn": "Distributed Systems and Big Data (DSBD) Project",
-        "image": "/images/events-speakers/DarioCamonita.jpeg"
+        "image": "/images/events-speakers/DarioCamonita.jpeg",
+        "project": "https://github.com/danterolle/dsbd"
       },
       {
         "name": "Matteo Jacopo Schembri",
         "topic": "Distributed Systems and Big Data (DSBD) Project",
         "topicEn": "Distributed Systems and Big Data (DSBD) Project",
-        "image": "/images/about/MatteoJacopoSchembri.jpeg"
+        "image": "/images/about/MatteoJacopoSchembri.jpeg",
+        "project": "https://github.com/Teosche/dsbd"
       }
     ]
   },
@@ -106,7 +108,9 @@
         "name": "Stefano Borzì",
         "topic": "Python multithreading",
         "topicEn": "Python multithreading",
-        "image": "/images/about/StefanoBorzi.jpeg"
+        "image": "/images/about/StefanoBorzi.jpeg",
+        "slide": "https://slides.com/stefanoborzi/code-e7d3ed/fullscreen#/1",
+        "project": "https://github.com/Helias/PythonCatania-multithreading"
       }
     ]
   },
@@ -164,7 +168,9 @@
         "name": "Stefano Borzì",
         "topic": "Python extendibility",
         "topicEn": "Python extendibility",
-        "image": "/images/about/StefanoBorzi.jpeg"
+        "image": "/images/about/StefanoBorzi.jpeg",
+        "slide": "https://slides.com/stefanoborzi/code-e7d3ed/fullscreen",
+        "project": "https://github.com/Helias/PythonCatania-extendibility"
       }
     ]
   },
@@ -235,20 +241,33 @@
     "id": 306025381,
     "title": "Meetup Python Catania - Carnival Party Time",
     "date": "2025-02-22",
-    "image": "/images/events/event-306025381.jpg",
+    "image": "/images/events/22-02-2025/event-306025381.jpg",
     "description": "La community di Python Catania si incontra nel primo meetup del 2025 per stare insieme e condividere del buon codice sorgente.",
     "descriptionEn": "The Python Catania community meets for the first meetup of 2025 to spend time together and share great source code.",
     "fullDescription": "Il primo meetup del 2025 si è tenuto in periodo di Carnevale da The Level Group: un'occasione per iniziare l'anno con il piede giusto. La serata ha incluso le ultime novità Python, annunci su PyCon 2025, un workshop \"How Coding Works!\" e si è conclusa con il PyDinner in maschera.",
     "fullDescriptionEn": "The first meetup of 2025 was held during Carnival at The Level Group: an opportunity to start the year on the right foot. The evening included the latest Python news, PyCon 2025 announcements, a \"How Coding Works!\" workshop and concluded with a costumed PyDinner.",
     "attendees": 36,
     "url": "https://www.meetup.com/python-catania/events/306025381/",
-    "gallery": ["/images/events/event-306025381.jpg"],
+    "gallery": [
+      "/images/events/22-02-2025/event-306025381.jpg",
+      "/images/events/22-02-2025/photo_2026-03-18_00-42-38.jpg",
+      "/images/events/22-02-2025/photo_2026-03-18_00-42-39.jpg",
+      "/images/events/22-02-2025/photo_2026-03-18_00-42-41.jpg",
+      "/images/events/22-02-2025/photo_2026-03-18_00-42-42.jpg"
+    ],
     "speakers": [
       {
         "name": "Salvatore Rapisarda",
         "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
         "topicEn": "Sharing the latest news about the Python language.",
         "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Matteo Jacopo Schembri",
+        "topic": "Ball Balance PI",
+        "topicEn": "Ball Balance PI",
+        "image": "/images/about/MatteoJacopoSchembri.jpeg",
+        "project": "https://github.com/Teosche/ball-balance-pi"
       }
     ]
   },

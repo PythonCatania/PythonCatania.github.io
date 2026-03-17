@@ -56,6 +56,38 @@
                   <p class="text-sm text-(--color-muted)">
                     {{ activeLang() === 'en' ? speaker.topicEn : speaker.topic }}
                   </p>
+                  @if (speaker.slide || speaker.project) {
+                    <div class="mt-2 flex flex-wrap gap-3">
+                      @if (speaker.slide) {
+                        <a
+                          [href]="speaker.slide"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 border-(--color-secondary) bg-(--color-secondary) px-4 py-2 text-sm font-semibold text-white no-underline transition-colors hover:border-(--color-secondary-hover) hover:bg-(--color-secondary-hover) hover:text-white [&_svg]:shrink-0"
+                        >
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-4 w-4" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                          </svg>
+                          Slides
+                        </a>
+                      }
+                      @if (speaker.project) {
+                        <a
+                          [href]="speaker.project"
+                          target="_blank"
+                          rel="noopener"
+                          class="inline-flex cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 border-(--color-primary) bg-(--color-primary) px-4 py-2 text-sm font-semibold text-white no-underline transition-colors hover:border-(--color-primary-hover) hover:bg-(--color-primary-hover) hover:text-white [&_svg]:shrink-0"
+                        >
+                          <app-icon-github />
+                          Project
+                        </a>
+                      }
+                    </div>
+                  }
                 </div>
               </li>
             }

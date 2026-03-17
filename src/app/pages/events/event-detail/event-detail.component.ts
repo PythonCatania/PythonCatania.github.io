@@ -6,12 +6,15 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { BASE_URL } from '../../../app.config';
 import { LightboxComponent } from '../../../components/shared/lightbox/lightbox.component';
+import { IconGithubComponent } from '../../../components/shared/icons/icon-github/icon-github.component';
 
 interface Speaker {
   readonly name: string;
   readonly image?: string;
   readonly topic: string;
   readonly topicEn: string;
+  readonly slide?: string;
+  readonly project?: string;
 }
 
 interface MeetupEvent {
@@ -32,7 +35,7 @@ interface MeetupEvent {
 
 @Component({
   selector: 'app-event-detail',
-  imports: [TranslocoModule, RouterLink, NgOptimizedImage, LightboxComponent],
+  imports: [TranslocoModule, RouterLink, NgOptimizedImage, LightboxComponent, IconGithubComponent],
   templateUrl: './event-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -57,7 +60,7 @@ export class EventDetailComponent {
   }
 
   protected videoThumbnail(videoId: string): string {
-    return `https://img.youtube.com/vi/${videoId.split('?')[0]}/0.jpg`;
+    return `${this.baseUrl}/images/youtube/${videoId.split('?')[0]}.jpg`;
   }
 
   protected videoWatchUrl(videoId: string): string {
