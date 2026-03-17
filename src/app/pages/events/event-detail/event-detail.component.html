@@ -33,10 +33,10 @@
       @if (event()!.speakers.length > 0) {
         <div class="mb-10">
           <h2 class="mb-4 text-xl font-semibold">{{ 'events.speakers' | transloco }}</h2>
-          <ul class="list-none p-0">
+          <ul class="grid list-none grid-cols-1 gap-3 p-0 sm:grid-cols-2">
             @for (speaker of event()!.speakers; track speaker.name) {
               <li
-                class="mb-3 flex items-start gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-4"
+                class="flex items-start gap-3 rounded-(--radius) border border-(--border) bg-(--surface) p-4"
               >
                 @if (speaker.image) {
                   <img
