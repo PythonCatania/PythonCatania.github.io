@@ -172,24 +172,34 @@
     "id": 308969846,
     "title": "Meetup Python Catania - Con la calata del fresco",
     "date": "2025-07-17",
-    "image": "/images/events/event-308969846.jpg",
+    "image": "/images/events/17-07-2025/event-308969846.jpg",
     "description": "In una calda serata d'estate la community Python Catania si incontra al Lido Grotta Smeralda per parlare di macchine a stati in Python e di game development con pygame.",
     "descriptionEn": "On a warm summer evening the Python Catania community meets at Lido Grotta Smeralda to talk about state machines in Python and game development with pygame.",
     "fullDescription": "Una serata estiva all'aperto al Lido Grotta Smeralda di Aci Castello: la cornice perfetta per due talk di alto livello. Luca Marturana ha presentato le macchine a stati in Python usando la libreria python-statemachine per modellare workflow complessi. Paolo Lo Bello ha invece mostrato come costruire un piccolo gioco in stile platform con pygame, puro divertimento e codice al tempo stesso. Aperitivo opzionale a seguire.",
     "fullDescriptionEn": "An outdoor summer evening at Lido Grotta Smeralda in Aci Castello: the perfect setting for two high-quality talks. Luca Marturana presented state machines in Python using the python-statemachine library to model complex workflows. Paolo Lo Bello then showed how to build a small platform-style game with pygame — pure fun and code at the same time. Optional aperitivo afterwards.",
     "attendees": 35,
     "url": "https://www.meetup.com/python-catania/events/308969846/",
-    "gallery": ["/images/events/event-308969846.jpg"],
+    "gallery": [
+      "/images/events/17-07-2025/event-308969846.jpg",
+      "/images/events/17-07-2025/pythoncatania_1753022774_3680944282235267964_75742876461.jpg",
+      "/images/events/17-07-2025/pythoncatania_1753022774_3680944282243594666_75742876461.jpg",
+      "/images/events/17-07-2025/pythoncatania_1753022774_3680944282243681070_75742876461.jpg",
+      "/images/events/17-07-2025/pythoncatania_1753022774_3680944282251832210_75742876461.jpg",
+      "/images/events/17-07-2025/pythoncatania_1753022774_3680944282251945845_75742876461.jpg",
+      "/images/events/17-07-2025/pythoncatania_1753022774_3680944282528806857_75742876461.jpg"
+    ],
     "speakers": [
       {
         "name": "Luca Marturana",
         "topic": "Macchine a stati in Python",
-        "topicEn": "State Machines in Python"
+        "topicEn": "State Machines in Python",
+        "image": "/images/events-speakers/Luca Marturana.jpeg"
       },
       {
         "name": "Paolo Lo Bello",
         "topic": "Piccoli giochi per puro divertimento con pygame",
-        "topicEn": "Small Games for Pure Fun with pygame"
+        "topicEn": "Small Games for Pure Fun with pygame",
+        "image": "/images/events-speakers/PaoloLoBello.jpg"
       }
     ]
   },
