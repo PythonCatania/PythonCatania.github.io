@@ -267,7 +267,8 @@
         "topic": "Ball Balance PI",
         "topicEn": "Ball Balance PI",
         "image": "/images/about/MatteoJacopoSchembri.jpeg",
-        "project": "https://github.com/Teosche/ball-balance-pi"
+        "project": "https://github.com/Teosche/ball-balance-pi",
+        "slide": "https://docs.google.com/presentation/d/1rK8ob33GuCfuvDlZo3TbiB6ly29JJe8W81gWpdIopX8/edit?slide=id.p#slide=id.p"
       }
     ]
   },
@@ -284,7 +285,10 @@
     "url": "https://www.meetup.com/python-catania/events/304691223/",
     "videos": [
       { "id": "AavetGgMq40", "title": "PyCT - Meetup 06 Dicembre 2024 - Intro alla community Python Catania" },
-      { "id": "c8URuoByeRY", "title": "PyCT - Meetup 06 Dicembre 2024 - GUI desktop application development (with PySide6)" },
+      {
+        "id": "c8URuoByeRY",
+        "title": "PyCT - Meetup 06 Dicembre 2024 - GUI desktop application development (with PySide6)"
+      },
       { "id": "Kkd2cmjGub0?start=829", "title": "PyCT - Meetup 06 Dicembre 2024 - PyDivertimento (AoC e SpeechLess)" }
     ],
     "gallery": ["/images/events/event-304691223.jpg"],
@@ -324,7 +328,10 @@
       { "id": "m0lCULOKqTc", "title": "Introduzione al Python Catania Meetup del 30/08/2024" },
       { "id": "1HksMsb9Xho", "title": "Python Catania Meetup 30/08/24 - Introduzione a Odoo by Salvo Rapisarda" },
       { "id": "ymCyuHgP6h4", "title": "Python Catania Meetup 30/08/24 - PyScript by Pietro Peterlongo" },
-      { "id": "yD2zhMWeJBM?start=1547", "title": "Python Catania Meetup 30/08/24 - Micropython by Salvatore Sanfilippo" }
+      {
+        "id": "yD2zhMWeJBM?start=1547",
+        "title": "Python Catania Meetup 30/08/24 - Micropython by Salvatore Sanfilippo"
+      }
     ],
     "gallery": ["/images/events/event-302671524.jpg"],
     "speakers": [
