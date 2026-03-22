@@ -162,7 +162,8 @@
         "name": "Matteo Jacopo Schembri",
         "topic": "Garbage collection in Python",
         "topicEn": "Garbage collection in Python",
-        "image": "/images/about/MatteoJacopoSchembri.jpeg"
+        "image": "/images/about/MatteoJacopoSchembri.jpeg",
+        "slide": "https://docs.google.com/presentation/d/1yKZ5cddHPERCxRmds7UEhOG_v29A-mPfVWgtKcaGhjw/edit?usp=sharing"
       },
       {
         "name": "Stefano Borzì",
@@ -267,6 +268,14 @@
         "topic": "Ball Balance PI",
         "topicEn": "Ball Balance PI",
         "image": "/images/about/MatteoJacopoSchembri.jpeg",
+        "project": "https://github.com/Teosche/ball-balance-pi",
+        "slide": "https://docs.google.com/presentation/d/1rK8ob33GuCfuvDlZo3TbiB6ly29JJe8W81gWpdIopX8/edit?slide=id.p#slide=id.p"
+      },
+      {
+        "name": "Davide Pantò",
+        "topic": "Ball Balance PI",
+        "topicEn": "Ball Balance PI",
+        "image": "/images/events-speakers/DavidePantò.jpeg",
         "project": "https://github.com/Teosche/ball-balance-pi",
         "slide": "https://docs.google.com/presentation/d/1rK8ob33GuCfuvDlZo3TbiB6ly29JJe8W81gWpdIopX8/edit?slide=id.p#slide=id.p"
       }
