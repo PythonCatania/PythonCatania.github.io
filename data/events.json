@@ -1,5 +1,27 @@
 [
   {
+    "id": 314071729,
+    "title": "from catania import pycciotti 🙈🙉🙊",
+    "date": "2026-04-23",
+    "image": "/images/events/23-04-2026/event-314071729.jpg",
+    "description": "La community di Python Catania si incontra in nuovo fantastico Meetup per stare insieme e condividire del buon codice sorgente. Che tu sia uno sviluppatore principiante o esperto di Python, questo evento fa per te!",
+    "descriptionEn": "The Python Catania community meets at a brand new fantastic Meetup to get together and share some great source code. Whether you're a beginner or an experienced Python developer, this event is for you!",
+    "fullDescription": "",
+    "fullDescriptionEn": "",
+    "attendees": 0,
+    "url": "https://www.meetup.com/python-catania/events/314071729",
+    "gallery": [],
+    "speakers": [
+      {
+        "name": "Salvatore Rapisarda",
+        "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
+        "topicEn": "Sharing the latest news about the Python language.",
+        "image": "/images/about/SalvoRapisarda.jpeg"
+      }
+    ]
+
+  },
+  {
     "id": 313050179,
     "title": "Meetup Python Catania - Python Coding Festival 🎶",
     "date": "2026-02-27",
