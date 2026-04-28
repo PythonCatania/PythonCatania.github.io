@@ -15,6 +15,7 @@ interface Speaker {
   readonly topicEn: string;
   readonly slide?: string;
   readonly project?: string;
+  readonly paper?: string;
 }
 
 interface MeetupEvent {
