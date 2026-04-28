@@ -4,22 +4,48 @@
     "title": "from catania import pycciotti 🙈🙉🙊",
     "date": "2026-04-23",
     "image": "/images/events/23-04-2026/event-314071729.jpg",
-    "description": "La community di Python Catania si incontra in nuovo fantastico Meetup per stare insieme e condividire del buon codice sorgente. Che tu sia uno sviluppatore principiante o esperto di Python, questo evento fa per te!",
+    "description": "La community di Python Catania si incontra in un nuovo fantastico Meetup per stare insieme e condividere del buon codice sorgente. Che tu sia uno sviluppatore principiante o esperto di Python, questo evento fa per te!",
     "descriptionEn": "The Python Catania community meets at a brand new fantastic Meetup to get together and share some great source code. Whether you're a beginner or an experienced Python developer, this event is for you!",
-    "fullDescription": "",
-    "fullDescriptionEn": "",
-    "attendees": 0,
-    "url": "https://www.meetup.com/python-catania/events/314071729",
-    "gallery": [],
+    "fullDescription": "La community Python Catania si è ritrovata presso la sede di AITHO, in viale Dusmet 50 a Catania, per un nuovo meetup all'insegna della condivisione e del buon codice sorgente. La serata ha incluso le novità in preparazione del PyCon Italia 2026, spazio alla creatività con domande e discussioni, sessioni tecniche partecipative e si è conclusa con la consueta PyDinner per chi voleva proseguire la serata in compagnia.",
+    "fullDescriptionEn": "The Python Catania community gathered at AITHO, viale Dusmet 50 in Catania, for a new meetup focused on sharing and great source code. The evening featured updates in preparation for PyCon Italia 2026, space for creativity with questions and discussions, hands-on technical sessions, and concluded with the customary PyDinner for those who wanted to continue the evening together.",
+    "attendees": 18,
+    "url": "https://www.meetup.com/python-catania/events/314071729/",
+    "gallery": [
+      "/images/events/23-04-2026/photo_1_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_2_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_3_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_4_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_5_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_6_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_7_2026-04-28_11-20-53.jpg",
+      "/images/events/23-04-2026/photo_8_2026-04-28_11-20-53.jpg"
+    ],
     "speakers": [
       {
         "name": "Salvatore Rapisarda",
         "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
         "topicEn": "Sharing the latest news about the Python language.",
         "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Matteo Jacopo Schembri",
+        "topic": "Phidias: Declarative vs Imperative - paradigm in multi-agent systems",
+        "topicEn": "Phidias: Declarative vs Imperative - paradigm in multi-agent systems",
+        "image": "/images/about/MatteoJacopoSchembri.jpeg",
+        "slide": "https://pitch.com/v/phidias-mzj4tg",
+        "project": "https://github.com/corradosantoro/phidias",
+        "paper": "https://ceur-ws.org/Vol-2502/paper5.pdf"
+      },
+      {
+        "name": "Giovanni Campo",
+        "topic": "Phidias: Declarative vs Imperative - paradigm in multi-agent systems",
+        "topicEn": "Phidias: Declarative vs Imperative - paradigm in multi-agent systems",
+        "image": "/images/events-speakers/GiovanniCampo.jpeg",
+        "slide": "https://pitch.com/v/phidias-mzj4tg",
+        "project": "https://github.com/corradosantoro/phidias",
+        "paper": "https://ceur-ws.org/Vol-2502/paper5.pdf"
       }
     ]
-
   },
   {
     "id": 313050179,
