@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
-import { ActivatedRoute, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { BASE_URL } from '../../../app.config';
-import { LightboxComponent } from '../../../components/shared/lightbox/lightbox.component';
 import { IconGithubComponent } from '../../../components/shared/icons/icon-github/icon-github.component';
+import { LightboxComponent } from '../../../components/shared/lightbox/lightbox.component';
 
 interface Speaker {
   readonly name: string;
@@ -15,6 +15,7 @@ interface Speaker {
   readonly topicEn: string;
   readonly slide?: string;
   readonly project?: string;
+  readonly project2?: string;
   readonly paper?: string;
 }
 
@@ -66,9 +67,7 @@ export class EventDetailComponent {
 
   protected videoWatchUrl(videoId: string): string {
     const [id, params] = videoId.split('?');
-    return params
-      ? `https://www.youtube.com/watch?v=${id}&${params}`
-      : `https://www.youtube.com/watch?v=${id}`;
+    return params ? `https://www.youtube.com/watch?v=${id}&${params}` : `https://www.youtube.com/watch?v=${id}`;
   }
 
   protected openLightbox(index: number): void {

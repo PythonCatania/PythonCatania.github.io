@@ -34,6 +34,7 @@
         "image": "/images/about/MatteoJacopoSchembri.jpeg",
         "slide": "https://pitch.com/v/phidias-mzj4tg",
         "project": "https://github.com/corradosantoro/phidias",
+        "project2": "https://github.com/Giovannicampo/phidias_samples",
         "paper": "https://ceur-ws.org/Vol-2502/paper5.pdf"
       },
       {
@@ -43,6 +44,7 @@
         "image": "/images/events-speakers/GiovanniCampo.jpeg",
         "slide": "https://pitch.com/v/phidias-mzj4tg",
         "project": "https://github.com/corradosantoro/phidias",
+        "project2": "https://github.com/Giovannicampo/phidias_samples",
         "paper": "https://ceur-ws.org/Vol-2502/paper5.pdf"
       }
     ]
