@@ -30,9 +30,10 @@ Configure the homepage **Next Meetup** section (`app-meetup`) for a specific Mee
    - English (`en.json`): `"<Weekday>, <D> <Month> <YYYY>, <h:MM AM/PM>"` — e.g. `Tuesday, 14 July 2026, 6:30 PM`.
 
 3. **Update the image.** Always replace `public/images/homepage/NextMeetup.jpg`.
-   - If the user attached an image for this event, use that source. Otherwise download the event's own cover image from the Meetup page (its `og:image`):
+   - If the user attached an image for this event, use that source. Otherwise download the event's own cover image from the Meetup page. The `og:image` meta tag points at a low-res share variant (e.g. `.../600_<id>.jpeg`); Meetup stores the same photo at full resolution under a `highres_` prefix, so rewrite the size prefix to `highres_` before downloading:
      ```bash
      IMAGE_URL=$(curl -sL "<event-url>" | grep -oP '<meta property="og:image"\s+content="\K[^"]+' | head -1)
+     IMAGE_URL=$(echo "$IMAGE_URL" | sed -E 's#/[0-9]+_([0-9]+\.[a-z]+)#/highres_\1#')
      curl -sL "$IMAGE_URL" -o /tmp/next-meetup-source
      ```
    - Convert the chosen source to JPG, overwrite the live file, and read back the dimensions:
