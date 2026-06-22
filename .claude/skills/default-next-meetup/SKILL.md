@@ -11,23 +11,17 @@ Restore the homepage **Next Meetup** section (`app-meetup`) to the generic defau
 
 - `src/app/components/meetup/meetup.component.html`
 - `public/i18n/it.json` and `public/i18n/en.json` (the `nextMeetup` object)
-- `public/images/homepage/NextMeetup.jpg`
-- Bundled default image: `assets/NextMeetup.default.jpg` (1440x1440)
+- `public/images/homepage/DefaultNextMeetup.jpg` — the committed generic default image (1440x1440). The default state points the `<img>` at this file directly; it is never overwritten. (Event-specific images go to `NextMeetup.jpg` instead, written by the `set-next-meetup` skill.)
 
 ## Steps
 
-1. **Restore the image.** Copy the bundled default over the live one:
-   ```bash
-   cp .claude/skills/default-next-meetup/assets/NextMeetup.default.jpg public/images/homepage/NextMeetup.jpg
-   ```
-
-2. **Reset the HTML.** Make `src/app/components/meetup/meetup.component.html` exactly:
+1. **Reset the HTML.** Make `src/app/components/meetup/meetup.component.html` exactly:
    ```html
    <section id="next-meetup" class="bg-(--surface) px-4">
      <div class="mx-auto flex max-w-5xl flex-col items-center gap-10 md:flex-row-reverse">
        <div class="w-full md:w-1/2">
          <img
-           ngSrc="/images/homepage/NextMeetup.jpg"
+           ngSrc="/images/homepage/DefaultNextMeetup.jpg"
            alt="Next Meetup"
            width="1440"
            height="1440"
@@ -54,9 +48,9 @@ Restore the homepage **Next Meetup** section (`app-meetup`) to the generic defau
      </div>
    </section>
    ```
-   Key differences from the event-specific state: `alt="Next Meetup"`, image `width/height` `1440`, no `nextMeetup.date` paragraph, generic `href="https://www.meetup.com/python-catania/"`, and the button uses `inline-flex` (not centered).
+   Key differences from the event-specific state: `ngSrc` points at `DefaultNextMeetup.jpg` (not `NextMeetup.jpg`), `alt="Next Meetup"`, image `width/height` `1440`, no `nextMeetup.date` paragraph, generic `href="https://www.meetup.com/python-catania/"`, and the button uses `inline-flex` (not centered).
 
-3. **Remove the date translation key.** Delete the `"date": ...` line from the `nextMeetup` object in both `public/i18n/it.json` and `public/i18n/en.json`. The resulting object is:
+2. **Remove the date translation key.** Delete the `"date": ...` line from the `nextMeetup` object in both `public/i18n/it.json` and `public/i18n/en.json`. The resulting object is:
    ```json
    "nextMeetup": {
      "title": "...",
@@ -66,7 +60,7 @@ Restore the homepage **Next Meetup** section (`app-meetup`) to the generic defau
    ```
    Leave `title`, `description`, `join` untouched.
 
-4. **Verify** the build still compiles:
+3. **Verify** the build still compiles:
    ```bash
    npm run build
    ```
