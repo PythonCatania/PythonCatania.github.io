@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
   id-token: write
 
 jobs:
@@ -40,6 +41,7 @@ jobs:
             git add -A
             git commit -m "chore: reset next meetup to default"
             git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
+            gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
           else
             echo "No changes to commit"
           fi
