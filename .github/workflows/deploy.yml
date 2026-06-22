@@ -5,6 +5,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      sha:
+        description: 'Commit SHA to deploy (defaults to branch tip)'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -20,6 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: ${{ inputs.sha || github.sha }}
           persist-credentials: false
 
       - name: Setup Node.js
