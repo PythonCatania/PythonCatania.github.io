@@ -3,24 +3,25 @@
     <div class="w-full md:w-1/2">
       <img
         ngSrc="/images/homepage/NextMeetup.jpg"
-        alt="Next Meetup"
-        width="1440"
-        height="1440"
+        alt="Meetup Python Catania - After PyCon Italia 2026"
+        width="360"
+        height="203"
         class="w-full rounded-(--radius) object-cover shadow-lg"
       />
     </div>
     <div class="flex w-full flex-col items-center gap-4 text-center md:w-1/2 md:items-start md:text-left">
       <div class="py-16">
         <h2>{{ 'nextMeetup.title' | transloco }}</h2>
-        <p class="mb-6">{{ 'nextMeetup.description' | transloco }}</p>
+        <p class="mb-2">{{ 'nextMeetup.description' | transloco }}</p>
+        <p class="mb-6 text-center text-xl font-bold">{{ 'nextMeetup.date' | transloco }}</p>
         <a
           id="meetup-link"
           rel="me noopener"
           target="_blank"
-          href="https://www.meetup.com/python-catania/"
+          href="https://www.meetup.com/python-catania/events/315327982/"
           role="button"
           aria-label="Meetup"
-          class="inline-flex cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 border-(--color-primary) bg-(--color-primary) px-4 py-2 text-base font-semibold text-white no-underline transition-colors hover:border-(--color-primary-hover) hover:bg-(--color-primary-hover) hover:text-white [&_svg]:shrink-0"
+          class="mx-auto flex w-fit cursor-pointer items-center justify-center gap-2 rounded-(--radius) border-2 border-(--color-primary) bg-(--color-primary) px-4 py-2 text-base font-semibold text-white no-underline transition-colors hover:border-(--color-primary-hover) hover:bg-(--color-primary-hover) hover:text-white [&_svg]:shrink-0"
         >
           <app-icon-meetup />{{ 'nextMeetup.join' | transloco }}</a
         >
