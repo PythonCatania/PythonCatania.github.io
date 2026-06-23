@@ -1,0 +1,28 @@
+# Python Catania
+
+> Python Catania is a non-profit community based in Catania, Sicily, that promotes the Python programming language and organizes free tech events, meetups and talks. Founded in 2023 by Python enthusiasts in the Catania area, it is part of the national Python Italia community. Members call themselves "Pycciotti". The site is bilingual (Italian and English).
+
+The official website is a static Angular application hosted on GitHub Pages at https://catania.python.it. It presents the community, its upcoming meetup, past and upcoming events, the team, and ways to get involved or contact the organizers.
+
+## Pages
+
+- [Home](https://catania.python.it/): Hero introduction, next meetup, call for speakers, and contacts.
+- [Events](https://catania.python.it/events): List of upcoming and past events, with detail pages per event.
+- [About / Chi siamo](https://catania.python.it/chi-siamo): Who we are and the organizing team.
+- [Code of Conduct](https://catania.python.it/coc): Community code of conduct.
+
+## Get involved
+
+- Call for Speakers: We welcome talks of any level, from personal side projects to technical deep dives. Anyone with an idea, project, or experience to share is encouraged to propose a talk.
+- Meetups: Periodic gatherings to share knowledge, experience, and passion for Python. Everyone is welcome, from beginners to experts.
+
+## Contacts
+
+- [Meetup](https://www.meetup.com/python-catania/): Events and RSVP.
+- [Telegram](https://t.me/pythoncatania): Community chat.
+- [GitHub](https://github.com/PythonCatania): Source code and projects.
+- [Mastodon](https://social.python.it/@pycatania)
+- [LinkedIn](https://www.linkedin.com/groups/9895708/)
+- [Facebook](https://www.facebook.com/PythonCatania)
+- [Instagram](https://www.instagram.com/pythoncatania/)
+- [YouTube](https://www.youtube.com/@pythoncatania)
