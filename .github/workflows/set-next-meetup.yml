@@ -23,23 +23,26 @@ jobs:
       - name: Install ImageMagick
         run: sudo apt-get update && sudo apt-get install -y imagemagick
 
-      - name: Run set-next-meetup skill
-        uses: anomalyco/opencode/github@latest
+      - name: Install opencode CLI
         env:
           OPENCODE_ZEN_API_KEY: ${{ secrets.OPENCODE_ZEN_API_KEY }}
-        with:
-          model: opencode/big-pickle
-          prompt: |
-            Fetch the event page at ${{ inputs.meetup_link }} and extract the title, date, and start time.
+        run: curl -fsSL https://opencode.ai/install | bash
+
+      - name: Run set-next-meetup skill
+        env:
+          OPENCODE_ZEN_API_KEY: ${{ secrets.OPENCODE_ZEN_API_KEY }}
+        run: |
+          opencode run --model opencode/big-pickle \
+            "Fetch the event page at ${{ inputs.meetup_link }} and extract the title, date, and start time.
             Then download the event cover image (use highres version from og:image meta tag),
             convert it to public/images/homepage/NextMeetup.jpg at quality 90, note the dimensions.
             Build localized date strings:
-              - Italian: e.g. "Martedì 14 luglio 2026, ore 18:30"
-              - English: e.g. "Tuesday, 14 July 2026, 6:30 PM"
+              - Italian: e.g. \"Martedì 14 luglio 2026, ore 18:30\"
+              - English: e.g. \"Tuesday, 14 July 2026, 6:30 PM\"
             Update src/app/components/meetup/meetup.component.html with the event image,
             title as alt, the WIDTH/HEIGHT from identify, the date paragraph, and the event link.
-            Add the "date" key to the nextMeetup object in public/i18n/it.json and
-            public/i18n/en.json. Follow the exact HTML/JSON structure from these existing files.
+            Add the \"date\" key to the nextMeetup object in public/i18n/it.json and
+            public/i18n/en.json. Follow the exact HTML/JSON structure from these existing files."
 
       - name: Commit and push changes
         env:
