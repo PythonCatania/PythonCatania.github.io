@@ -27,10 +27,8 @@ jobs:
         uses: anomalyco/opencode/github@latest
         env:
           OPENCODE_ZEN_API_KEY: ${{ secrets.OPENCODE_ZEN_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           model: opencode/big-pickle
-          use_github_token: true
           prompt: |
             Fetch the event page at ${{ inputs.meetup_link }} and extract the title, date, and start time.
             Then download the event cover image (use highres version from og:image meta tag),
