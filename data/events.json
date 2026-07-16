@@ -30,7 +30,9 @@
         "name": "Enzo Camuto",
         "topic": "ThoroTest — Un'unica timeline per ogni test",
         "topicEn": "ThoroTest — Un'unica timeline per ogni test",
-        "image": "/images/events-speakers/EnzoCamuto.jpeg"
+        "image": "/images/events-speakers/EnzoCamuto.jpeg",
+        "project": "https://github.com/ecamuto/thorotest",
+        "demo": "https://thorotest.com/"
       }
     ]
   },
