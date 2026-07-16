@@ -17,6 +17,7 @@ interface Speaker {
   readonly project?: string;
   readonly project2?: string;
   readonly paper?: string;
+  readonly demo?: string;
 }
 
 interface MeetupEvent {
