@@ -1,5 +1,40 @@
 [
   {
+    "id": 315327982,
+    "title": "Meetup Python Catania - After PyCon Italia 2026",
+    "date": "2026-07-14",
+    "image": "/images/events/14-07-2026/event-315327982.jpg",
+    "description": "La community di Python Catania si incontra per un nuovo meetup dal titolo \"After PyCon Italia 2026\": condivisione dell'esperienza al PyCon Italia 2026, talk preparati dai nostri esperti su Python e spazio alla creatività.",
+    "descriptionEn": "The Python Catania community meets for a new meetup titled \"After PyCon Italia 2026\": sharing the community's experience at PyCon Italia 2026, talks prepared by our Python experts and space for creativity.",
+    "fullDescription": "La community Python Catania si è ritrovata presso la sede di Paradigma SpA, in viale Africa 31 a Catania, per il meetup \"After PyCon Italia 2026\". La serata ha incluso la condivisione dell'esperienza della community al PyCon Italia 2026 dello scorso maggio, talk preparati dagli esperti della community, spazio alla creatività con domande e discussioni, brevi sessioni tecniche partecipative e si è conclusa con la consueta PyDinner per chi voleva proseguire la serata in compagnia.",
+    "fullDescriptionEn": "The Python Catania community gathered at Paradigma SpA, viale Africa 31 in Catania, for the \"After PyCon Italia 2026\" meetup. The evening featured the community's experience at PyCon Italia 2026 last May, talks prepared by community experts, space for creativity with questions and discussions, short hands-on technical sessions, and concluded with the customary PyDinner for those who wanted to continue the evening together.",
+    "attendees": 20,
+    "url": "https://www.meetup.com/python-catania/events/315327982/",
+    "gallery": [
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-37.jpg",
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-39.jpg",
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-40.jpg",
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-42.jpg",
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-43.jpg",
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-45.jpg",
+      "/images/events/14-07-2026/photo_2026-07-16_10-01-45-2.jpg"
+    ],
+    "speakers": [
+      {
+        "name": "Salvatore Rapisarda",
+        "topic": "Condivisione delle ultime novità riguardo il linguaggio Python.",
+        "topicEn": "Sharing the latest news about the Python language.",
+        "image": "/images/about/SalvoRapisarda.jpeg"
+      },
+      {
+        "name": "Enzo Camuto",
+        "topic": "ThoroTest — Un'unica timeline per ogni test",
+        "topicEn": "ThoroTest — Un'unica timeline per ogni test",
+        "image": "/images/events-speakers/EnzoCamuto.jpeg"
+      }
+    ]
+  },
+  {
     "id": 314071729,
     "title": "from catania import pycciotti 🙈🙉🙊",
     "date": "2026-04-23",
