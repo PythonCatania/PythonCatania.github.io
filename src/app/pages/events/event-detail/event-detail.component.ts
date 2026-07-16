@@ -6,6 +6,7 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { BASE_URL } from '../../../app.config';
 import { IconGithubComponent } from '../../../components/shared/icons/icon-github/icon-github.component';
+import { IconGlobeComponent } from '../../../components/shared/icons/icon-globe/icon-globe.component';
 import { LightboxComponent } from '../../../components/shared/lightbox/lightbox.component';
 
 interface Speaker {
@@ -38,7 +39,14 @@ interface MeetupEvent {
 
 @Component({
   selector: 'app-event-detail',
-  imports: [TranslocoModule, RouterLink, NgOptimizedImage, LightboxComponent, IconGithubComponent],
+  imports: [
+    TranslocoModule,
+    RouterLink,
+    NgOptimizedImage,
+    LightboxComponent,
+    IconGithubComponent,
+    IconGlobeComponent,
+  ],
   templateUrl: './event-detail.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
