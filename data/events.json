@@ -1,5 +1,34 @@
 [
   {
+    "id": 316796896,
+    "title": "Meetup Python Catania - Non si babbIA! 🤖🐍",
+    "date": "2026-10-21",
+    "image": "/images/events/21-10-2026/event-316796896.jpg",
+    "description": "La community di Python Catania si incontra per un nuovo meetup dal titolo \"Non si babbIA!\": un talk su noia, intuito e Python nell'era dell'AI, novità su Python e tool Rust e spazio alla creatività.",
+    "descriptionEn": "The Python Catania community meets for a new meetup titled \"Non si babbIA!\": a talk on boredom, intuition and Python in the AI era, news about Python and Rust tooling, and space for creativity.",
+    "fullDescription": "La community Python Catania si è ritrovata presso la sede di CreationDose, in via Antonino di Sangiuliano 197 a Catania, per il meetup \"Non si babbIA!\". La serata ha incluso il talk \"The Pit is On: Pyth-On\" sull'intuito che si accende solo quando tutto il resto si spegne, le novità su Python e i tool Rust, spazio alla creatività con domande e discussioni, brevi sessioni tecniche partecipative e si è conclusa con la consueta PyDinner per chi voleva proseguire la serata in compagnia.",
+    "fullDescriptionEn": "The Python Catania community gathered at CreationDose, via Antonino di Sangiuliano 197 in Catania, for the \"Non si babbIA!\" meetup. The evening featured the talk \"The Pit is On: Pyth-On\" about the intuition that only switches on when everything else switches off, news about Python and Rust tooling, space for creativity with questions and discussions, short hands-on technical sessions, and concluded with the customary PyDinner for those who wanted to continue the evening together.",
+    "attendees": 17,
+    "url": "https://www.meetup.com/python-catania/events/316796896/",
+    "gallery": [],
+    "speakers": [
+      {
+        "name": "Francesco Genovese",
+        "topic": "The Pit is On: Pyth-On, l'intuito che si accende solo quando tutto il resto si spegne",
+        "topicEn": "The Pit is On: Pyth-On, the intuition that only switches on when everything else switches off",
+        "image": "/images/events-speakers/FrancescoGenovese.jpeg"
+      },
+      {
+        "name": "Stefano Borzì",
+        "topic": "AI PY skills: novità su Python & tool Rust",
+        "topicEn": "AI PY skills: news about Python & Rust tooling",
+        "image": "/images/about/StefanoBorzi.jpeg",
+        "slide": "https://slides.com/stefanoborzi/code-e7d3ed/fullscreen#/2",
+        "project": "https://github.com/PythonCatania/ai-py-skills"
+      }
+    ]
+  },
+  {
     "id": 315327982,
     "title": "Meetup Python Catania - After PyCon Italia 2026",
     "date": "2026-07-14",
