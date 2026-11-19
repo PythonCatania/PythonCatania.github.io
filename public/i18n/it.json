@@ -23,6 +23,13 @@
       "code": "Codice"
     }
   },
+  "cookieConsent": {
+    "message": "Questo sito utilizza i cookie per garantirti la migliore esperienza di navigazione.",
+    "learnMore": "Scopri di più",
+    "learnMoreLabel": "scopri di più sui cookie",
+    "dismiss": "Ho capito!",
+    "dismissLabel": "chiudi il messaggio sui cookie"
+  },
   "events": {
     "title": "Eventi",
     "past": "Eventi passati",
