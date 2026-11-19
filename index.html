@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; child-src 'none'; style-src 'self' 'unsafe-inline'; script-src-elem 'self' 'unsafe-inline'; connect-src 'self'"/>
     <base href="/"/>
     <meta name="author" content="Python Catania"/>
-    <meta name="color-scheme" content="light dark"/>
+    <meta name="color-scheme" content="dark light"/>
     <meta name="description" content="Gruppo della comunità Python di Catania"/>
     <meta name="keywords" content="Python,Catania"/>
     <meta name="robots" content="index, follow"/>
@@ -31,6 +31,13 @@
     <link rel="canonical" href="https://catania.python.it"/>
     <link rel="apple-touch-icon" sizes="128x128" href="/images/apple-touch-icon.png"/>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌋</text></svg>"/>
+    <script>
+      // Mirrors ThemeService.initialTheme so the saved theme applies before Angular boots.
+      try {
+        const theme = localStorage.getItem('theme');
+        document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+      } catch {}
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -43,8 +50,8 @@
         "url": "https://catania.python.it/"
       }
     </script>
-  <link rel="stylesheet" href="styles-GFAJSTMR.css"></head>
+  <link rel="stylesheet" href="styles-JNM3E275.css"></head>
   <body>
     <app-root></app-root>
-  <link rel="modulepreload" href="chunk-6LR6LA2V.js"><link rel="modulepreload" href="chunk-LE4JLOLG.js"><script src="main-HBTO5AHM.js" type="module"></script></body>
+  <link rel="modulepreload" href="chunk-NIINWAEW.js"><link rel="modulepreload" href="chunk-LE4JLOLG.js"><script src="main-FSROBZPQ.js" type="module"></script></body>
 </html>
