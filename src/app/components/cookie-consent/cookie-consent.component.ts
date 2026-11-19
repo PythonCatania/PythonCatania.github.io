@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
 
 export const COOKIE_CONSENT_STORAGE_KEY = 'cookieconsent_status';
@@ -14,7 +15,7 @@ function readDismissed(): boolean {
 
 @Component({
   selector: 'app-cookie-consent',
-  imports: [TranslocoModule],
+  imports: [RouterLink, TranslocoModule],
   templateUrl: './cookie-consent.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { TranslocoTestingModule } from '@jsverse/transloco';
 import { COOKIE_CONSENT_STORAGE_KEY, CookieConsentComponent } from './cookie-consent.component';
 
@@ -13,6 +14,7 @@ describe('CookieConsentComponent', () => {
           translocoConfig: { defaultLang: 'it' },
         }),
       ],
+      providers: [provideRouter([])],
     }).compileComponents();
   });
 

@@ -42,6 +42,11 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/coc/coc.component').then((module) => module.CocComponent),
   },
   {
+    path: 'privacy-policy',
+    loadComponent: () =>
+      import('./pages/privacy-policy/privacy-policy.component').then((module) => module.PrivacyPolicyComponent),
+  },
+  {
     path: '**',
     redirectTo: '',
   },
