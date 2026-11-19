@@ -51,6 +51,8 @@
     "tagline": "The right place to meet Python language enthusiasts from Catania."
   },
   "nav": {
+    "lightTheme": "Light theme",
+    "darkTheme": "Dark theme",
     "home": "PyCatania",
     "nextMeetup": "Next Meetup",
     "callForSpeakers": "Propose a talk",

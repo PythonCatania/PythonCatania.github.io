@@ -8,7 +8,7 @@ const VARIANT_CLASSES = {
   telegram: 'border-[#2aabee] bg-[#2aabee] text-white hover:border-[#1d96d4] hover:bg-[#1d96d4] hover:text-white',
   'primary-outline':
     'border-[#f50000] bg-transparent text-[#f50000] hover:border-[#f50000] hover:bg-[#f50000]/10 hover:text-[#f50000]',
-  'white-outline': 'border-white bg-transparent text-white hover:border-white hover:bg-white/10',
+  'neutral-outline': 'border-current bg-transparent text-inherit hover:bg-(--surface)',
 } as const;
 
 type ButtonVariant = keyof typeof VARIANT_CLASSES;

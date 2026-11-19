@@ -103,8 +103,9 @@
       }
     </ul>
 
-    <!-- Language toggle (desktop) -->
-    <div class="hidden items-center sm:flex">
+    <!-- Theme + language toggles (desktop) -->
+    <div class="hidden items-center gap-2 sm:flex">
+      <app-theme-toggle />
       <button
         (click)="toggleLanguage()"
         class="cursor-pointer rounded-(--radius) border border-(--border) bg-transparent px-3 py-[0.4rem] text-inherit transition-colors hover:bg-(--surface)"
@@ -127,6 +128,7 @@
         </a>
       </li>
       <li class="flex list-none items-center gap-2">
+        <app-theme-toggle [compact]="true" />
         <button
           (click)="toggleLanguage()"
           class="cursor-pointer rounded-(--radius) border border-(--border) bg-transparent px-2 py-1 text-inherit transition-colors hover:bg-(--surface)"

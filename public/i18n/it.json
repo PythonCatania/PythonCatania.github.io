@@ -51,6 +51,8 @@
     "tagline": "Il posto giusto dove incontrare gli appassionati del linguaggio Python di Catania."
   },
   "nav": {
+    "lightTheme": "Tema chiaro",
+    "darkTheme": "Tema scuro",
     "home": "PyCatania",
     "nextMeetup": "Prossimo Meetup",
     "callForSpeakers": "Proponi un talk",

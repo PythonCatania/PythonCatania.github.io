@@ -3,10 +3,11 @@ import { NgOptimizedImage } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { DebugService } from '../../services/debug.service';
+import { ThemeToggleComponent } from './theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-header',
-  imports: [NgOptimizedImage, RouterLink, RouterLinkActive, TranslocoModule],
+  imports: [NgOptimizedImage, RouterLink, RouterLinkActive, TranslocoModule, ThemeToggleComponent],
   templateUrl: './header.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

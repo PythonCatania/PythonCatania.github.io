@@ -26,7 +26,12 @@ If you write to the email address shown on the website, your address and any oth
 
 This website **does not use profiling, analytics or third-party cookies**.
 
-The only data stored on your device is your choice about the cookie notice: when you click "Got it!", your browser saves the value `cookieconsent_status` in its local storage, so the notice is not shown again. This is a technical tool, it contains no personal data and does not require consent under Article 122 of the Privacy Code. You can delete it at any time from your browser settings.
+The website stores only two technical preferences on your device, in your browser's local storage:
+
+- `cookieconsent_status`: remembers that you clicked "Got it!" on the cookie notice, so it is not shown again
+- `theme`: remembers whether you chose the light or dark theme
+
+These are technical tools, they contain no personal data and do not require consent under Article 122 of the Privacy Code. You can delete them at any time from your browser settings.
 
 ### 2.4 Links to external services
 
@@ -53,7 +58,7 @@ GitHub, Inc. is based in the United States. Browsing data is transferred to the 
 
 - **Browsing data**: as set by GitHub.
 - **Email communications**: for as long as needed to handle the request, and no longer than 2 years.
-- **Cookie notice choice**: until you delete it from your browser.
+- **Preferences stored in your browser**: until you delete them from your browser.
 
 ---
 

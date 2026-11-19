@@ -9,7 +9,7 @@
     />
     <base href="/" />
     <meta name="author" content="Python Catania" />
-    <meta name="color-scheme" content="light dark" />
+    <meta name="color-scheme" content="dark light" />
     <meta name="description" content="Gruppo della comunità Python di Catania" />
     <meta name="keywords" content="Python,Catania" />
     <meta name="robots" content="index, follow" />
@@ -37,6 +37,13 @@
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌋</text></svg>"
     />
+    <script>
+      // Mirrors ThemeService.initialTheme so the saved theme applies before Angular boots.
+      try {
+        const theme = localStorage.getItem('theme');
+        document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+      } catch {}
+    </script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

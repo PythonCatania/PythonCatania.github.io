@@ -26,7 +26,12 @@ Se scrivi all'indirizzo e-mail indicato sul sito, il tuo indirizzo e gli altri d
 
 Il sito **non utilizza cookie di profilazione, di analisi statistica o di terze parti**.
 
-L'unico dato salvato sul tuo dispositivo è la preferenza relativa al banner informativo sui cookie: quando premi "Ho capito!", il browser memorizza nel proprio archivio locale (localStorage) il valore `cookieconsent_status`, così da non mostrare di nuovo il banner. Si tratta di uno strumento tecnico, che non contiene dati personali e non richiede consenso ai sensi dell'art. 122 del Codice Privacy. Puoi cancellarlo in qualsiasi momento dalle impostazioni del browser.
+Il sito salva sul tuo dispositivo, nell'archivio locale del browser (localStorage), solo due preferenze tecniche:
+
+- `cookieconsent_status`: ricorda che hai premuto "Ho capito!" sul banner informativo, così da non mostrarlo di nuovo
+- `theme`: ricorda se hai scelto il tema chiaro o scuro
+
+Si tratta di strumenti tecnici, che non contengono dati personali e non richiedono consenso ai sensi dell'art. 122 del Codice Privacy. Puoi cancellarli in qualsiasi momento dalle impostazioni del browser.
 
 ### 2.4 Link a servizi esterni
 
@@ -53,7 +58,7 @@ GitHub, Inc. ha sede negli Stati Uniti. Il trasferimento dei dati di navigazione
 
 - **Dati di navigazione**: secondo i tempi stabiliti da GitHub.
 - **Comunicazioni e-mail**: per il tempo necessario a gestire la richiesta e comunque non oltre 2 anni.
-- **Preferenza sul banner cookie**: finché non la cancelli dal browser.
+- **Preferenze salvate nel browser**: finché non le cancelli dal browser.
 
 ---
 
