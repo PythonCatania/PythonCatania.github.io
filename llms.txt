@@ -10,6 +10,7 @@ The official website is a static Angular application hosted on GitHub Pages at h
 - [Events](https://catania.python.it/events): List of upcoming and past events, with detail pages per event.
 - [About / Chi siamo](https://catania.python.it/chi-siamo): Who we are and the organizing team.
 - [Code of Conduct](https://catania.python.it/coc): Community code of conduct.
+- [Privacy Policy](https://catania.python.it/privacy-policy): How visitor data is processed.
 
 ## Get involved
 
