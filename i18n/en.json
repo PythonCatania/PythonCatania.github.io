@@ -23,6 +23,13 @@
       "code": "Code"
     }
   },
+  "cookieConsent": {
+    "message": "This website uses cookies to ensure you get the best experience on our website.",
+    "learnMore": "Learn more",
+    "learnMoreLabel": "learn more about cookies",
+    "dismiss": "Got it!",
+    "dismissLabel": "dismiss cookie message"
+  },
   "events": {
     "title": "Events",
     "past": "Past events",
