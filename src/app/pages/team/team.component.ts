@@ -33,7 +33,7 @@ export class TeamComponent {
     },
     {
       name: 'Stefano Borzi',
-      image: '/images/about/StefanoBorzi.jpeg',
+      image: '/images/about/StefanoBorziTalk.jpeg',
       github: 'https://github.com/Helias',
       linkedin: 'https://www.linkedin.com/in/stefanoborzi/',
     },

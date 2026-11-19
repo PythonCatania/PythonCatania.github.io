@@ -23,7 +23,7 @@
         "name": "Stefano Borzì",
         "topic": "AI PY skills: novità su Python & tool Rust",
         "topicEn": "AI PY skills: news about Python & Rust tooling",
-        "image": "/images/about/StefanoBorzi.jpeg",
+        "image": "/images/about/StefanoBorziTalk.jpeg",
         "slide": "https://slides.com/stefanoborzi/code-e7d3ed/fullscreen#/2",
         "project": "https://github.com/PythonCatania/ai-py-skills"
       }
@@ -225,7 +225,7 @@
         "name": "Stefano Borzì",
         "topic": "Python multithreading",
         "topicEn": "Python multithreading",
-        "image": "/images/about/StefanoBorzi.jpeg",
+        "image": "/images/about/StefanoBorziTalk.jpeg",
         "slide": "https://slides.com/stefanoborzi/code-e7d3ed/fullscreen#/1",
         "project": "https://github.com/Helias/PythonCatania-multithreading"
       }
@@ -286,7 +286,7 @@
         "name": "Stefano Borzì",
         "topic": "Python extendibility",
         "topicEn": "Python extendibility",
-        "image": "/images/about/StefanoBorzi.jpeg",
+        "image": "/images/about/StefanoBorziTalk.jpeg",
         "slide": "https://slides.com/stefanoborzi/code-e7d3ed/fullscreen",
         "project": "https://github.com/Helias/PythonCatania-extendibility"
       }
