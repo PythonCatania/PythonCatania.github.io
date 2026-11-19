@@ -7,26 +7,20 @@
     <ul class="grid list-none grid-cols-1 gap-6 p-0 sm:grid-cols-2">
       @for (event of events(); track event.id) {
         <li class="overflow-hidden rounded-(--radius) border border-(--border) bg-(--surface)">
-          <!-- Image banner behind title -->
-          <a [routerLink]="['/events', event.id]" class="relative block no-underline">
-            @if (event.image) {
+          @if (event.image) {
+            <a [routerLink]="['/events', event.id]" class="block" tabindex="-1" aria-hidden="true">
               <div
                 class="h-48 bg-cover bg-center"
                 [style.background-image]="'url(' + baseUrl + event.image + ')'"
-                role="img"
-                [attr.aria-label]="event.title"
-              >
-                <div class="flex h-full items-end bg-gradient-to-t from-black/70 to-transparent p-4">
-                  <h3 class="text-lg font-semibold text-white">{{ event.title }}</h3>
-                </div>
-              </div>
-            } @else {
-              <div class="flex items-center bg-(--color-primary)/10 px-4 py-4">
-                <h3 class="text-lg font-semibold text-inherit hover:underline">{{ event.title }}</h3>
-              </div>
-            }
-          </a>
+              ></div>
+            </a>
+          }
           <div class="p-5">
+            <h3 class="mb-1 text-lg font-semibold">
+              <a [routerLink]="['/events', event.id]" class="text-inherit no-underline hover:underline">{{
+                event.title
+              }}</a>
+            </h3>
             <p class="mb-3 text-sm text-(--color-muted)">{{ event.date }}</p>
             <p class="mb-3 text-(--color-muted)">
               {{ activeLang() === 'en' ? event.descriptionEn : event.description }}
